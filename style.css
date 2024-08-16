@@ -1,3 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header.header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
 .headertop {
   width: 100%;
   height: 1.9375rem;
@@ -5,6 +16,14 @@
 }
 .main-header {
   width: 100%;
-  height: 3.1875rem;
   background: #d9d9d9;
 }
+.header li {
+  list-style: none;
+}
+.header ul a {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+  }
