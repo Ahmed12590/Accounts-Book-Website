@@ -1,0 +1,787 @@
+:root{
+    --blue:#2F4680;
+    --white:#FEFEFF;
+    --yellow:#F99500;
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+} 
+
+body{
+    font-family: 'Poppins', Courier, monospace;
+}
+
+
+.header-upper{
+    width: 100%;
+    height: 31px;
+    background-color: var(--blue);
+    
+}
+
+
+.header-upper ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+    /* align-items: center; */
+}
+
+.header-upper ul li{
+    align-items: center;
+    /* padding-top: 6px; */
+    
+}
+.header-upper ul li i{
+    padding-right: 6px;
+}
+
+.header-upper ul li a{
+    text-decoration: none;
+    color:var(--white) ;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+} 
+
+
+/* ----------header nav------ */
+
+.header-nav{
+    width: 100%;
+    height: 51px;
+    background-color: #D9D9D9;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-nav ul li{
+    list-style: none;
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+    position: relative;
+}
+
+
+/* ----------------------------------------- banner section  */
+.banner{
+    width: 100%;
+    height: 571px;
+    background: url(../images/banner-image.png) no-repeat center center/cover;
+    background-color: #404040;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.2; */
+    position: relative;
+}
+
+.banner-upper{
+    position: absolute;
+    /* align-items: center;
+    justify-content: center; */
+    top:11%;
+    left: 25%;
+}
+
+
+
+/* -----------------------------section three */
+
+
+#three{
+display: flex;
+justify-content: space-around;
+
+}
+
+
+.boxx{
+    width: 377px;
+    height: auto;
+    /* border: 2px solid black; */
+   box-shadow:8px -4px 17px rgb(0 0 0 / 34%);
+   margin: 30px 0;
+}
+
+
+
+.boxx img{
+    object-fit: cover;
+}
+.boxx .boxx-cont{
+    margin: 10px 20px;
+
+}
+.boxx .boxx-cont h4{
+    text-transform: uppercase;
+    font-family: 'poppins',Arial, Helvetica, sans-serif;
+}
+
+.boxx .boxx-cont a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--blue);
+    padding-top: 20px;
+}
+/* -------------------section four */
+#four{
+ /* background: url(../images/banner-image.png) no-repeat center center/cover; */
+ background-image: url(../images/valor-kopeny-bITjK6W2Alw-unsplash\ 1.png),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+ background-size:cover;
+ background-repeat: no-repeat;
+ background-blend-mode: overlay;
+ /* opacity: 0.6; */
+ width: 100%;
+ height: 390px;
+ padding-top: 120px;
+ text-align: center;
+ 
+}
+
+.four-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+#four h1{
+    color: #D9D9D9;
+    font-size: 50px;
+}
+
+.four-text{
+    background-color: #DD3333;
+    color: #D9D9D9;
+    padding: 0 35px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.four-text h4{
+    font-size: 35px;
+}
+
+/* -----------------------section five */
+
+#five{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sec-five-triangle{
+    transform: rotate(180deg);
+    position: absolute;
+}
+
+.sec-five-triangle-right{
+    float: right;
+}
+
+.sec-five-heading{
+    text-align: center;
+    padding: 0 100px;
+}
+#five .sec-five-heading h1{
+    font-size: 88px;
+    color: var(--blue);
+    text-transform: uppercase;
+    
+}
+
+.servies-main{
+    margin-top: 90px;
+    margin: 0 25px;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+.servies-list{
+    width: 340px;
+    /* height: fit-content; */
+}
+.servies-list h4{
+    font-size: 23px;
+    font-weight: 700;
+}
+.before-icon{
+    display: flex;
+    margin-top: 50px;
+}
+
+.servies-main i{
+    color: var(--blue);
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.sec-heading{
+    font-size: 30px;
+    color: #2F4680;
+    margin:50px 0 0 30px
+}
+
+.btn{
+    font-size: 23px;
+    background-color: var(--blue);
+    color: #D9D9D9;
+    padding: 10px 15px;
+    border: 0.5px solid var(--blue);
+    border-radius: 10px;
+    margin: 30px 0;
+    text-transform: uppercase;
+
+}
+
+.btn:hover{
+    border: 0.5px solid var(--blue);
+    color: var(--blue);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+/* -----------------section six */
+
+#six{
+    background-image: url(../images/Image546.png),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 345px;
+}
+
+.six-content{
+    text-align: center;
+}
+
+.six-content h1{
+    font-size:70px ;
+    color: #D9D9D9;
+    text-transform: uppercase;
+
+
+}
+.six-content h1 span{
+    color: var(--yellow);
+}
+
+.six-content button:hover{ 
+   color: #D9D9D9;
+   border: 0.5px solid white ;
+}
+
+/* --------------------------------section benefits home page       old seven */
+
+#benefits{
+    margin-top: 40px;
+}
+.benefits-heading{
+    text-align: center;
+}
+.benefits-heading h1{
+    text-transform: uppercase;
+    font-size: 135px;
+    color: #2F4680;
+    line-height: 0.7;
+}
+
+.benefits-heading h3{
+    font-size: 48px;
+    color: #2F4680;
+    line-height: 1;
+}
+
+.benefits-heading h4{
+    font-size: 22px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.benefits-heading h5{
+    font-size: 25px;
+    color:black ;
+    font-weight: 700;
+}
+
+.benefits-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+.benefits-main .benefits-box{
+    width: 380px;
+    margin-top:30px ;
+}
+.benefits-box i{
+    font-size: 30px;
+    color: var(--blue);
+}
+.benefits-main .benefits-box h3{
+font-size: 23px;
+color: #080606;
+}
+
+/* --------------------------------section partner       home page*/
+
+
+#partner{
+    margin: 8vw 0;
+}
+.partner-heading{
+    text-align: center;
+}
+.partner-heading h3{
+   font-size:20px;
+}
+
+.partner-heading h1{
+    font-size: 46px;
+    color: var(--blue);
+    line-height: 1;
+}
+
+.partner-img{
+    padding: 1vw 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+/* -----------------------------------------  section appointment      home page */
+#appointment{
+    width: 100%;
+    height: 30vw;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px ;
+
+}
+
+.apmt-content{
+     padding:0 30vw ;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    text-align: center;
+}
+
+.apmt-content h2{
+   font-size:3vw;
+   color: var(--white);
+}
+
+.apmt-content p{
+    font-size: 1.7vw;
+    color: var(--white);
+}
+
+.btn-apmt{
+    font-size: 2vw;
+    color: var(--blue);
+    font-weight: 600;
+    background-color: white;
+    padding: 0.5vw 0.5vw;
+    text-transform: uppercase;
+    margin-top: 2vw;
+    cursor: pointer;
+    border: 0.5px solid var(--blue);
+}
+
+.btn-apmt:hover{
+    color: black;
+}
+/* -------------------------------------section about */
+.about-company{
+    margin: 2vw 7vw;
+}
+.abt-com-heading{
+    text-align: center;
+}
+
+.abt-com-heading h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.abt-com-heading h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--blue);
+}
+.about-company .cont{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.about-company .cont div{
+    width: 45%;
+}
+
+.labels-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.label{
+    width: 30vw;
+    background-color: var(--blue);
+}
+
+/* -------------------section eight */
+#eight{
+    padding-top: 30px;
+background-color: var(--blue);
+}
+.eight-heading{
+    text-align: center;
+}
+
+.eight-heading h2{
+font-size: 46px;
+color: var(--yellow);
+}
+
+.eight-heading h1{
+    font-size: 88px;
+    color: white;
+}
+
+.cards-main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.cards-main .cards{
+    width: 568px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--white);
+}
+
+.cards-main .cards h3{
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.cards-main .cards h2{
+    font-size: 46px;
+    color: var(--blue);
+}
+
+.cards-main .cards img{
+    margin: 20px 0;
+}
+
+
+/* -----------------------------------section footer */
+
+.footer-upper{
+    background-color: #404040;
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    color: var(--white);
+    padding: 30px 0;
+}
+
+.footer-upper div ul{
+    list-style: none;
+}
+
+.footer-upper div ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-upper div ul li  i{
+    margin-right: 10px;
+}
+
+.footer-upper .footer-social ul li{
+    line-height: 2.5;
+}
+
+.footer-bar{
+width: 100%;
+height: 54px;
+background-color: var(--blue);
+color: var(--white);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+
+/* ---------------------------media query */
+
+
+@media(max-width:768px) {
+
+    /* .header-nav{
+        width: 100%;
+        height: 100px;
+        background-color: #D9D9D9;
+    } */
+
+    .header-nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+    }
+    #three{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    }
+
+        
+        .banner-upper{
+            position: absolute;
+            top:25%;
+            left: 25%;
+            /* display: none; */
+        }
+
+        .banner-upper img{
+            width: 75%;
+        }
+
+        .boxx{
+            width: 100%;
+            height: auto;
+           box-shadow:8px -4px 17px rgb(0 0 0 / 34%);
+           margin: 30px 0;
+        }
+        .boxx img{
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .sec-five-heading{
+            text-align: center;
+            padding: 0 100px;
+        }
+        .servies-list{
+            width: 150px;
+        }
+        .benefits-main{
+            padding: 0 5px;
+        }
+        .benefits-main .benefits-box{
+            width: 350px;
+            margin-top:30px ;
+        }
+        .cards-main .cards{
+            margin: 10px 0;
+            
+        }
+
+        .footer-upper img{
+            width:150px;
+
+        }
+        .footer-upper div{
+            margin-left: 10px;
+        }
+
+            /* --------------------side nav on mid screen */
+        nav ul{
+            background: var(--blue);
+            top: 0;
+            right: -200px;
+            height: 80vh;
+            width: 200px;
+            position: fixed;
+            padding-top: 70px;
+            display: flex;
+            flex-direction: column;
+            transition: right 0.5s;
+            z-index: 6;
+           
+        }
+        nav .fa{
+            display: block;
+            font-size: 25px;
+            padding: 10px 10px;
+            float: right;
+        }
+
+        nav ul .fa{
+            position:absolute;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            color: var(--white);
+        }
+         
+        nav ul li{
+            padding: 0 15px;
+        }
+        .header-nav ul li a{
+            color: var(--white);
+        }
+    
+}
+
+
+@media(max-width:320px) {
+
+
+    .banner-upper{
+        position: absolute;
+        top:30%;
+        left: 0;
+        padding: 0 10px;
+        /* display: none; */
+    }
+
+    .banner-upper img{
+        width: 100%;
+    }
+
+    #four h1{
+        font-size: 25px;
+    }
+    
+    .four-text h4{
+        font-size: 20px;
+    }
+    
+    
+    #five .sec-five-heading{
+    padding-top: 120px;
+    }
+    #five .sec-five-heading h1{
+        font-size: 50px;
+       
+    }
+    .servies-list{
+        width: 80%;
+        /* height: fit-content; */
+    }
+    
+
+    .six-content h1{
+        font-size:40px ;
+    }
+    
+    .benefits-heading h1{
+        font-size: 60px;
+    }
+    .benefits-main{
+        padding: 0 10px;
+    
+    }
+
+    .benefits-box{
+        width: 90%;
+        padding: 0 10px;
+    }
+    .eight-heading h2{
+        font-size: 46px;
+       
+    }
+        
+    .eight-heading h1{
+        font-size: 40px;
+        color: white;
+    }
+
+    .cards{
+        width: 568px;
+        text-align: center;
+        padding: 20px 0;
+        background-color: var(--white);
+    }
+
+    .footer-upper{
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+    .footer-upper div{
+        padding: 15px 0;
+    }
+    .footer-upper div h3{
+        font-size: 20px;
+    }
+
+    .footer-bar p{
+        font-size: 12px;
+        }
+
+
+        /* ----------------------------side nav on small screen */
+        nav ul{
+            background: var(--blue);
+            top: 0;
+            right: -200px;
+            height: 80vh;
+            width: 200px;
+            position: fixed;
+            padding-top: 70px;
+            display: flex;
+            flex-direction: column;
+            transition: right 0.5s;
+            z-index: 6;
+           
+        }
+        nav .fa{
+            display: block;
+            font-size: 25px;
+            padding: 10px 10px;
+            float: right;
+        }
+
+        nav ul .fa{
+            position:absolute;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            color: var(--white);
+        }
+         
+        nav ul li{
+            padding: 0 15px;
+        }
+        .header-nav ul li a{
+            color: var(--white);
+        }
+}
