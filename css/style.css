@@ -19,22 +19,18 @@ body{
     width: 100%;
     height: 31px;
     background-color: var(--blue);
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-
-.header-upper ul{
+.header-upper div ul{
     list-style: none;
     display: flex;
-    justify-content:space-evenly;
-    /* align-items: center; */
+    gap: 40px;
 }
 
-.header-upper ul li{
-    align-items: center;
-    /* padding-top: 6px; */
-    
-}
+
 .header-upper ul li i{
     padding-right: 6px;
 }
@@ -42,7 +38,6 @@ body{
 .header-upper ul li a{
     text-decoration: none;
     color:var(--white) ;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 500;
 } 
@@ -54,16 +49,16 @@ body{
     width: 100%;
     height: 51px;
     background-color: #D9D9D9;
+     /* display: flex; */
+    /* justify-content: space-around; */
+    /* justify-content: center;  */
+    
 }
 
 .header-nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-}
-
-.header-nav ul li{
-    list-style: none;
+    justify-content: space-evenly;
 }
 
 .header-nav ul li a{
@@ -96,85 +91,181 @@ body{
     left: 25%;
 }
 
+/* --------------------------------section benefits       old seven    home page */
 
-
-/* -----------------------------section three */
-
-
-#three{
-display: flex;
-justify-content: space-around;
-
+#benefits{
+    margin-top: 40px;
 }
-
-
-.boxx{
-    width: 377px;
-    height: auto;
-    /* border: 2px solid black; */
-   box-shadow:8px -4px 17px rgb(0 0 0 / 34%);
-   margin: 30px 0;
+.benefits-heading{
+    text-align: center;
+    padding: 0 100px;
 }
-
-
-
-.boxx img{
-    object-fit: cover;
-}
-.boxx .boxx-cont{
-    margin: 10px 20px;
-
-}
-.boxx .boxx-cont h4{
+.benefits-heading h1{
     text-transform: uppercase;
-    font-family: 'poppins',Arial, Helvetica, sans-serif;
+    font-size: 135px;
+    color: #2F4680;
+    line-height: 0.7;
 }
 
-.boxx .boxx-cont a{
+.benefits-heading h3{
+    font-size: 48px;
+    color: #2F4680;
+    line-height: 1;
+}
+
+.benefits-heading h4{
+    font-size: 22px;
+    color: black;
     text-transform: uppercase;
-    text-decoration: none;
-    color: var(--blue);
-    padding-top: 20px;
-}
-/* -------------------section four */
-#four{
- /* background: url(../images/banner-image.png) no-repeat center center/cover; */
- background-image: url(../images/valor-kopeny-bITjK6W2Alw-unsplash\ 1.png),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
- background-size:cover;
- background-repeat: no-repeat;
- background-blend-mode: overlay;
- /* opacity: 0.6; */
- width: 100%;
- height: 390px;
- padding-top: 120px;
- text-align: center;
- 
 }
 
-.four-main{
+.benefits-heading h5{
+    font-size: 25px;
+    color:black ;
+    font-weight: 700;
+}
+
+.benefits-main{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 40px;
+
 }
 
-
-#four h1{
-    color: #D9D9D9;
-    font-size: 50px;
+.benefits-main .benefits-box{
+    width: 380px;
+    margin-top:30px ;
 }
-
-.four-text{
-    background-color: #DD3333;
-    color: #D9D9D9;
-    padding: 0 35px;
+.benefits-box i{
     font-size: 30px;
-    margin-top: 10px;
+    color: var(--blue);
 }
-.four-text h4{
-    font-size: 35px;
+.benefits-main .benefits-box h3{
+font-size: 23px;
+color: #080606;
 }
 
-/* -----------------------section five */
+/* --------------------------------section partner       home page*/
+
+
+#partner{
+    margin: 8vw 0;
+}
+.partner-heading{
+    text-align: center;
+    padding: 0 100px;
+}
+.partner-heading h3{
+   font-size:20px;
+}
+
+.partner-heading h1{
+    font-size: 46px;
+    color: var(--blue);
+    line-height: 1;
+}
+
+.partner-img{
+    padding: 1vw 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+/* -----------------------------------------  section appointment      home page */
+#appointment{
+    width: 100%;
+    height: 30vw;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:20px ;
+
+}
+
+.apmt-content{
+     padding:0 30vw ;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    text-align: center;
+}
+
+.apmt-content h2{
+   font-size:3vw;
+   color: var(--white);
+}
+
+.apmt-content p{
+    font-size: 1.7vw;
+    color: var(--white);
+}
+
+.btn-apmt{
+    font-size: 2vw;
+    color: var(--blue);
+    font-weight: 600;
+    background-color: white;
+    padding: 0.5vw 0.5vw;
+    text-transform: uppercase;
+    margin-top: 2vw;
+    cursor: pointer;
+    border: 0.5px solid var(--blue);
+}
+
+.btn-apmt:hover{
+    color: black;
+}
+/* -------------------------home page end ---------------------------------------------------- */
+
+
+
+/* ------------------------------------------services------------------------------     */
+
+
+/* -------------------section claim                   services page */
+#claim{
+    /* background: url(../images/banner-image.png) no-repeat center center/cover; */
+    background-image: url(../images/valor-kopeny-bITjK6W2Alw-unsplash\ 1.png),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    /* opacity: 0.6; */
+    width: 100%;
+    height: 390px;
+    padding-top: 120px;
+    text-align: center;
+    
+   }
+   
+   .claim-main{
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+   }
+   
+   
+   #claim h1{
+       color: #D9D9D9;
+       font-size: 50px;
+   }
+   
+   .claim-text{
+       background-color: #DD3333;
+       color: #D9D9D9;
+       padding: 0 35px;
+       font-size: 30px;
+       margin-top: 10px;
+   }
+   .claim-text h4{
+       font-size: 35px;
+   }
+
+   
+/* -----------------------section five                        services page */
 
 #five{
     width: 100%;
@@ -243,6 +334,7 @@ justify-content: space-around;
     margin: 30px 0;
     text-transform: uppercase;
 
+
 }
 
 .btn:hover{
@@ -255,6 +347,51 @@ justify-content: space-around;
 .center{
     text-align: center;
 }
+/* ----------------------------------------services end ---------------- */
+
+
+/* -----------------------------section three */
+
+
+#three{
+display: flex;
+justify-content: space-around;
+
+}
+
+
+.boxx{
+    width: 377px;
+    height: auto;
+    /* border: 2px solid black; */
+   box-shadow:8px -4px 17px rgb(0 0 0 / 34%);
+   margin: 30px 0;
+}
+
+
+
+.boxx img{
+    object-fit: cover;
+}
+.boxx .boxx-cont{
+    margin: 10px 20px;
+
+}
+.boxx .boxx-cont h4{
+    text-transform: uppercase;
+    font-family: 'poppins',Arial, Helvetica, sans-serif;
+}
+
+.boxx .boxx-cont a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--blue);
+    padding-top: 20px;
+}
+
+
+
+
 /* -----------------section six */
 
 #six{
@@ -286,138 +423,14 @@ justify-content: space-around;
    border: 0.5px solid white ;
 }
 
-/* --------------------------------section benefits home page       old seven */
 
-#benefits{
-    margin-top: 40px;
-}
-.benefits-heading{
-    text-align: center;
-}
-.benefits-heading h1{
-    text-transform: uppercase;
-    font-size: 135px;
-    color: #2F4680;
-    line-height: 0.7;
-}
-
-.benefits-heading h3{
-    font-size: 48px;
-    color: #2F4680;
-    line-height: 1;
-}
-
-.benefits-heading h4{
-    font-size: 22px;
-    color: black;
-    text-transform: uppercase;
-}
-
-.benefits-heading h5{
-    font-size: 25px;
-    color:black ;
-    font-weight: 700;
-}
-
-.benefits-main{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 40px;
-
-}
-
-.benefits-main .benefits-box{
-    width: 380px;
-    margin-top:30px ;
-}
-.benefits-box i{
-    font-size: 30px;
-    color: var(--blue);
-}
-.benefits-main .benefits-box h3{
-font-size: 23px;
-color: #080606;
-}
-
-/* --------------------------------section partner       home page*/
-
-
-#partner{
-    margin: 8vw 0;
-}
-.partner-heading{
-    text-align: center;
-}
-.partner-heading h3{
-   font-size:20px;
-}
-
-.partner-heading h1{
-    font-size: 46px;
-    color: var(--blue);
-    line-height: 1;
-}
-
-.partner-img{
-    padding: 1vw 15vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-/* -----------------------------------------  section appointment      home page */
-#appointment{
-    width: 100%;
-    height: 30vw;
-    background-color: var(--blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom:20px ;
-
-}
-
-.apmt-content{
-     padding:0 30vw ;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
-    text-align: center;
-}
-
-.apmt-content h2{
-   font-size:3vw;
-   color: var(--white);
-}
-
-.apmt-content p{
-    font-size: 1.7vw;
-    color: var(--white);
-}
-
-.btn-apmt{
-    font-size: 2vw;
-    color: var(--blue);
-    font-weight: 600;
-    background-color: white;
-    padding: 0.5vw 0.5vw;
-    text-transform: uppercase;
-    margin-top: 2vw;
-    cursor: pointer;
-    border: 0.5px solid var(--blue);
-}
-
-.btn-apmt:hover{
-    color: black;
-}
-/* -------------------------------------section about */
+/* -------------------------------------section about       paage about */
 .about-company{
     margin: 2vw 7vw;
 }
 .abt-com-heading{
     text-align: center;
+    padding: 0 100px;
 }
 
 .abt-com-heading h3{
@@ -444,12 +457,249 @@ color: #080606;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
+    padding: 5vw 5vw;
 }
 
 .label{
-    width: 30vw;
+    width: 35vw;
+    height: 25vw;
     background-color: var(--blue);
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-direction: column;
+
 }
+
+.label h1{
+    font-size: 15vw;
+    color: var(--white);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.label h3{
+    font-size: 2vw;
+    color: var(--white);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.team-heading{
+    text-align: center;
+    padding: 0 100px;
+}
+.team-heading h3{
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.team-heading h2{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+.team-heading h1{
+    text-transform: uppercase;
+    font-size: 7rem;
+    color: var(--blue);
+    line-height: 0.7;
+}
+
+.team-content{
+    width: 100%;
+    background-color: var(--blue);
+    margin-top: 5vw;
+    padding: 7vw 0;
+
+}
+.team-box-main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+
+}
+
+.team-box{
+    width: 500px;
+    height: 200;
+    display: flex;
+}
+
+.team-detail{
+    padding-top: 10px;
+    color: var(--white);
+}
+.team-detail h5{
+    font-size: 20px;
+}
+.team-detail h6{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.team-detail p{
+    font-size: 13px;
+}
+
+/* ----------------------------------page about end------------------- */
+
+
+
+/* -------------------------------------------------section testimonials          page testimonials */
+.testimonial{
+    margin: 20px 0;
+}
+.testi-heading{
+    text-align: center;
+    padding: 0 100px;
+}
+ 
+.testi-heading h3::before,
+.testi-heading h3::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid var(--blue);
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-0.4rem);
+}
+
+.testi-heading h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.testi-heading h1{
+    font-size: 10vw;
+    color: var(--blue);
+    line-height: 1;
+}
+
+.testi-heading h2{
+    font-size: 5.5vw;
+    color: var(--blue);
+    line-height: 1;
+}
+.testi-main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vw;
+
+}
+.testi-box{
+    width:350px;
+}
+.testi-box .review{
+    display: flex;
+    padding: 10px 0;
+    flex-direction: row;
+}
+
+.testi-box .review p{
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.testi-upper{
+    display: flex;
+}
+.testi-upper div{
+    padding-left: 12px;
+}
+.testi-upper div p{
+    font-size: 12px;
+}
+.testi-upper i{
+    font-size: 30px;
+    padding-top: 4px;
+}
+
+.testi-box img{
+width: 7rem;
+}
+
+/* ----------------------------------------page .testimonial end */
+
+
+
+/* -----------------------------------------section contact                page contact */
+/* 
+.conct-img{
+width: 50vw;
+height: 100vh;
+border: 2px solid black;
+} */
+.conct-img img{
+    object-fit: contain;
+    z-index: 66;
+}
+
+.contact{
+    display: flex;
+}
+
+.conct-right{
+    /* padding: 12vw 8vw ; */
+    padding-top: 12vw;
+    padding-left: 10vw;
+}
+
+.conct-heading{
+text-align: center;
+}
+.conct-heading h3::before,
+.conct-heading h3::after{
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid var(--blue);
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-0.6rem);
+    text-align: center;
+
+}
+
+.conct-heading h3{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.conct-heading h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    line-height: 1;
+    color: var(--blue);
+}
+
+.conct-address{
+    display: flex;
+    align-items: center;
+    margin-top: 2vw;
+}
+.conct-address h3{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.conct-address p{
+    text-transform: uppercase;
+}
+
+.conct-address i{
+    font-size: 4rem;
+    color: var(--blue);
+}
+.conct-address div{
+    padding-left: 30px;
+    width: 200px;
+
+}
+
+/* -------------------------------------page contact end---------------- */
 
 /* -------------------section eight */
 #eight{
