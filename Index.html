@@ -14,6 +14,7 @@
 </head>
 <body>
     <header>
+        <img id="imghead" src="./images/logo-footer.png" alt="">
         <div class="header-upper">
             <div>
                 <ul>
@@ -30,22 +31,42 @@
             </div>
            
         </div>
-        <!-- <div> -->
+    
                 <nav class="header-nav">
                     <ul id="sidemenu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="#">Articles</a></li>
+                        <li class="abt"><a href="about.html">About Us<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="abt-drop">
+                                <li><a href="about.html">About US</a></li>
+                                <li><a href="about.html#team">Team</a></li>
+                                <li><a href="#">About 3</a></li>
+                                <li><a href="#">About 4</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="abt"><a href="services.html">Services<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="abt-drop">
+                                <li><a href="#">Services 1</a></li>
+                                <li><a href="#">Services 2</a></li>
+                                <li><a href="#">Services 3</a></li>
+                                <li><a href="#">Services 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="abt"><a href="testimonials.html">Resources<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="abt-drop">
+                                <li><a href="#">Resources .</a></li>
+                                <li><a href="#">Resources .</a></li>
+                                <li><a href="#">Resources .</a></li>
+                                <li><a href="#">Resources .</a></li>
+                            </ul>
+                        </li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Limited Company</a></li>
-                        <li><a href="#">Tax Return Calculator</a></li>
+                        <li><a href="#">Book your Slot</a></li>
                         <i class="fa fa-times" onclick="closemenu()"></i>
                     </ul>
                 <i class="fa fa-bars" onclick="openmenu()"></i>
                 </nav>
-        <!-- </div> -->
+        
     </header>
 
     <section>
@@ -219,32 +240,7 @@
                 </section>
 
     
-        <script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-//     window.addEventListener("click", myFunction);
-
-// function myFunction() {
-//         sidemenu.style.right = "-200px";
-// }
-
-        // window.addEventListener('click', function(event) {
-        //         if (!sidemenu.contains(event.target)) {
-        //             console.log("clicked");
-        //             closemenu();
-        //         }
-        //     });
-
-  </script>
         
-    
+    <script src="./js/script.js"></script>
 </body>
 </html>
