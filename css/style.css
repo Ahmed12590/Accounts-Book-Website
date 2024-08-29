@@ -1044,8 +1044,6 @@ nav .fa{
 /* blog page css  */
 
 
-
-
 /* General styles for the blog section */
 .py-28 {
     padding-top: 7rem;
@@ -1220,4 +1218,45 @@ img {
 
 .underline {
     text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .grid-cols-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .text-3xl {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .text-3xl {
+        font-size: 1.25rem;
+    }
+
+    .py-28 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-3xl {
+        font-size: 1.125rem;
+    }
+
+    .py-28 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .mt-14 {
+        margin-top: 2rem;
+    }
 }
