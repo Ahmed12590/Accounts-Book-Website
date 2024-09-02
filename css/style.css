@@ -32,7 +32,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-left: 50px;
+    /* padding-left: 50px; */
 }
 
 .header-upper div ul{
@@ -61,9 +61,14 @@ header{
     height: 51px;
     background-color: #D9D9D9;
      display: flex;
-    justify-content: center; 
+    justify-content: space-evenly; 
     align-items: center;
-    
+}
+
+.header-nav .logo img{
+    position: absolute;
+    left: 20px;
+    top: 32px;
 }
 
 .header-nav>ul {
@@ -128,7 +133,7 @@ header{
 .abt:hover .abt-drop{
     display: block;
 }
-/* ----------------------------------------- banner section  */
+/* ----------------------------------------- banner section home page  */
 .banner{
     width: 100%;
     height: 571px;
@@ -244,17 +249,14 @@ color: #080606;
 }
 
 .apmt-content{
-     padding:0 30vw ;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; */
+     padding:0 8vw ;
     text-align: center;
 }
 
 .apmt-content h2{
    font-size:3vw;
    color: var(--white);
+   padding-bottom: 2vw;
 }
 
 .apmt-content p{
@@ -262,21 +264,24 @@ color: #080606;
     color: var(--white);
 }
 
-.btn-apmt{
-    font-size: 2vw;
-    color: var(--blue);
-    font-weight: 600;
+.apmt-link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 5px;
+    display: inline-block;
+    border: 0.7px solid var(--white);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.apmt-link:hover{
+    /* padding: 5px 20px; */
     background-color: white;
-    padding: 0.5vw 0.5vw;
-    text-transform: uppercase;
-    margin-top: 2vw;
-    cursor: pointer;
-    border: 0.5px solid var(--blue);
+    color: var(--blue);
+    border: 0.5px solid black;
 }
 
-.btn-apmt:hover{
-    color: black;
-}
 /* -------------------------home page end ---------------------------------------------------- */
 
 
@@ -389,9 +394,11 @@ color: #080606;
     padding: 10px 15px;
     border: 0.5px solid var(--blue);
     border-radius: 10px;
-    margin: 30px 0;
+    margin: 4vw 0;
     text-transform: uppercase;
     transition: 0.5s;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn:hover{
@@ -482,7 +489,7 @@ justify-content: space-around;
 }
 
 
-/* -------------------------------------section about       paage about */
+/* -------------------------------------section about       page about */
 .about-company{
     margin: 2vw 7vw;
 }
@@ -606,6 +613,115 @@ justify-content: space-around;
 }
 
 /* ----------------------------------page about end------------------- */
+
+
+/* -----------------------page bookkeeping */
+
+#bookkeeping{
+    margin: 3vw 0;
+}
+
+.book-heading{
+    text-align: center;
+    padding: 0 100px;
+}
+
+.book-heading h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+
+.book-main{
+    margin-top: 90px;
+    margin: 0 25px;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+.book-list{
+    width: 340px;
+    /* height: fit-content; */
+}
+.book-list h4{
+    font-size: 23px;
+    font-weight: 700;
+}
+.book-box{
+    display: flex;
+    margin-top: 50px;
+}
+
+.book-main i{
+    color: var(--blue);
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.b-dtl-head{
+    text-align: center;
+}
+
+.b-dtl-head h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blue);
+}
+.det-main{
+    margin: 0 15vw;
+    display: flex;
+}
+
+.det-left{
+    width: 40%;
+}
+.det-left img{
+    width: 250px;
+}
+.det-right{
+    margin: 8vw 0 0 5vw;
+    width: 45%;
+}
+.det-right h5{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.business-insights{
+    /* display: flex */
+    margin-top: 6vw;
+    background-color: #F7F8FA;
+    padding-top: 20px;
+}
+
+.b-insights-main{
+    display: flex;
+}
+.b-insights-l{
+    width: 40%;
+}
+.b-insights-r{
+    width: 45%;
+    margin-left: 10vw;
+    margin-top: 5vw;
+}
+.b-insights-r p{
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.work-pera{
+   text-align: center;
+   margin: 5vw 15vw;
+}
+.work-pera h3{
+    font-size: 25px;
+    padding-bottom: 2vw;
+}
+
+
+/* -------------------------------page bookkeeping end */
 
 
 

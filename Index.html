@@ -14,7 +14,7 @@
 </head>
 <body>
     <header>
-        <img id="imghead" src="./images/logo-footer.png" alt="">
+        <!-- <img id="imghead" src="./images/logo-footer.png" alt=""> -->
         <div class="header-upper">
             <div>
                 <ul>
@@ -33,6 +33,12 @@
         </div>
     
                 <nav class="header-nav">
+                    <div class="logo">
+                       <a href="index.html">
+                           
+                           <img src="./images/logo.png">
+                        </a>
+                    </div>
                     <ul id="sidemenu">
                         <li><a href="index.html">Home</a></li>
                         <li class="abt"><a href="about.html">About Us<i class="fa-solid fa-chevron-down"></i></a>
@@ -46,10 +52,9 @@
                         </li>
                         <li class="abt"><a href="services.html">Services<i class="fa-solid fa-chevron-down"></i></a>
                             <ul class="abt-drop">
-                                <li><a href="#">Services 1</a></li>
-                                <li><a href="#">Services 2</a></li>
-                                <li><a href="#">Services 3</a></li>
-                                <li><a href="#">Services 4</a></li>
+                                <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
+                                <li><a href="#">Catch Up Bookkeeping</a></li>
+                                <li><a href="services.html">Other Services</a></li>
                             </ul>
                         </li>
                         <li class="abt"><a href="testimonials.html">Resources<i class="fa-solid fa-chevron-down"></i></a>
@@ -65,6 +70,7 @@
                         <i class="fa fa-times" onclick="closemenu()"></i>
                     </ul>
                 <i class="fa fa-bars" onclick="openmenu()"></i>
+
                 </nav>
         
     </header>
@@ -186,8 +192,9 @@
                         <div class="apmt-content">
                             <h2>Offices</h2>
                             <p>With a team that speaks over 10 languages
-                                in 13 offices, we are always ready for you.</p>
-                                <button class="btn-apmt">Schedule an appointment</button>
+                                in<br> 13 offices, we are always ready for you.</p>
+                                <a href="#" class="apmt-link">Schedule an appointment →</a>
+                                <!-- <button class="btn-apmt">Schedule an appointment</button> -->
                         </div>
                     </section>
 
