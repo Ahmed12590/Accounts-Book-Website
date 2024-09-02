@@ -1263,7 +1263,8 @@ nav .fa{
 }
 
 
-lenis 
+/* lenis smooth scroll  */
+
 html.lenis, html.lenis body {
     height: auto;
   }
@@ -1283,3 +1284,5 @@ html.lenis, html.lenis body {
   .lenis.lenis-smooth iframe {
     pointer-events: none;
   }
+
+  /* lenis scroll finish  */
