@@ -13,6 +13,29 @@
     <title>Document</title>
 </head>
 <body>
+
+
+
+     <!-- Include Lenis for smooth scrolling -->
+   <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+   <script>
+       // Initialize Lenis
+       const lenis = new Lenis()
+
+       // Log the scroll event (optional)
+       lenis.on('scroll', (e) => {
+           console.log(e)
+       })
+
+       // Animation frame function to handle smooth scrolling
+       function raf(time) {
+           lenis.raf(time)
+           requestAnimationFrame(raf)
+       }
+
+       // Start the animation frame loop
+       requestAnimationFrame(raf)
+   </script>
     <header>
         <div class="header-upper">
             <div>

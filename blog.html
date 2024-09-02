@@ -19,6 +19,33 @@
 
 <body>
 
+
+ <!-- Include Lenis for smooth scrolling -->
+ <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+ <script>
+     // Initialize Lenis
+     const lenis = new Lenis()
+
+     // Log the scroll event (optional)
+     lenis.on('scroll', (e) => {
+         console.log(e)
+     })
+
+     // Animation frame function to handle smooth scrolling
+     function raf(time) {
+         lenis.raf(time)
+         requestAnimationFrame(raf)
+     }
+
+     // Start the animation frame loop
+     requestAnimationFrame(raf)
+ </script>
+
+
+
+
+
+
     <header>
         <div class="header-upper">
             <div>
@@ -61,19 +88,19 @@
     <!-- Start Blog-6 -->
     <section class="py-28">
         <div class="container">
-            <div class="max-w-md  mx-auto text-center">
-                <h2 class="text-3xl font-bold">Blog Section </h2>
-                <p class="text-base font-medium text-gray-500 mt-4">Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.</p>
+            <div class="max-w-md mx-auto text-center">
+                <h2 class="text-3xl font-bold">Blog Section</h2>
+                <p class="text-base font-medium text-gray-500 mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div><!-- end max-w -->
-
+    
             <div class="grid grid-cols-3 gap-6 mt-14">
+                <!-- Blog Post 1 -->
                 <div class="shadow bg-white rounded-md">
                     <div class="relative">
                         <div class="absolute top-0 start-0 p-2">
-                            <span
-                                class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-xl text-[13px] font-medium rounded-full text-white py-1 px-2"><span
-                                    class="w-1.5 h-1.5 inline-block bg-white rounded-full"></span> 12 Aug 2022</span>
+                            <span class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-xl text-[13px] font-medium rounded-full text-white py-1 px-2">
+                                <span class="w-1.5 h-1.5 inline-block bg-white rounded-full"></span> 12 Aug 2022
+                            </span>
                         </div>
                         <img src="images/blog-17.jpg" class="rounded-md" alt="">
                         <div class="absolute inset-x-0 top-auto bottom-0 p-2">
@@ -88,13 +115,14 @@
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- Blog Post 2 -->
                 <div class="shadow bg-white rounded-md">
                     <div class="relative">
                         <div class="absolute top-0 start-0 p-2">
-                            <span
-                                class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-xl text-[13px] font-medium rounded-full text-white py-1 px-2"><span
-                                    class="w-1.5 h-1.5 inline-block bg-white rounded-full"></span> 15 Aug 2022</span>
+                            <span class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-xl text-[13px] font-medium rounded-full text-white py-1 px-2">
+                                <span class="w-1.5 h-1.5 inline-block bg-white rounded-full"></span> 15 Aug 2022
+                            </span>
                         </div>
                         <img src="images/blog-18.jpg" class="rounded-md" alt="">
                         <div class="absolute inset-x-0 top-auto bottom-0 p-2">
@@ -109,13 +137,14 @@
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- Blog Post 3 -->
                 <div class="shadow bg-white rounded-md">
                     <div class="relative">
                         <div class="absolute top-0 start-0 p-2">
-                            <span
-                                class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-xl text-[13px] font-medium rounded-full text-white py-1 px-2"><span
-                                    class="w-1.5 h-1.5 inline-block bg-white rounded-full"></span> 22 Aug 2022</span>
+                            <span class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-xl text-[13px] font-medium rounded-full text-white py-1 px-2">
+                                <span class="w-1.5 h-1.5 inline-block bg-white rounded-full"></span> 22 Aug 2022
+                            </span>
                         </div>
                         <img src="images/blog-19.jpg" class="rounded-md" alt="">
                         <div class="absolute inset-x-0 top-auto bottom-0 p-2">
@@ -130,14 +159,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid grid-cols-3 gap-6 mt-14">
+    
+                <!-- Blog Post 4 -->
                 <div class="shadow bg-white rounded-md">
                     <div class="relative">
                         <div class="absolute top-0 start-0 p-2">
-                            <span
-                                class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-xl text-[13px] font-medium rounded-full text-white py-1 px-2"><span
-                                    class="w-1.5 h-1.5 inline-block bg-white rounded-full"></span> 12 Aug 2022</span>
+                            <span class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-xl text-[13px] font-medium rounded-full text-white py-1 px-2">
+                                <span class="w-1.5 h-1.5 inline-block bg-white rounded-full"></span> 12 Aug 2022
+                            </span>
                         </div>
                         <img src="images/blog-17.jpg" class="rounded-md" alt="">
                         <div class="absolute inset-x-0 top-auto bottom-0 p-2">
@@ -152,12 +181,51 @@
                         </div>
                     </div>
                 </div>
-                
-
-
-                
-        </div>
-
+    
+                <!-- Blog Post 5 -->
+                <div class="shadow bg-white rounded-md">
+                    <div class="relative">
+                        <div class="absolute top-0 start-0 p-2">
+                            <span class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-xl text-[13px] font-medium rounded-full text-white py-1 px-2">
+                                <span class="w-1.5 h-1.5 inline-block bg-white rounded-full"></span> 15 Aug 2022
+                            </span>
+                        </div>
+                        <img src="images/blog-18.jpg" class="rounded-md" alt="">
+                        <div class="absolute inset-x-0 top-auto bottom-0 p-2">
+                            <div class="bg-white/50 backdrop-blur-xl p-4 rounded-md">
+                                <div class="text-white text-center">
+                                    <h4 class="text-2xl font-semibold">Read buildings</h4>
+                                    <p class="text-base font-medium mt-3">Lorenm ipsum dolor sit amet consectetur. Vitae
+                                        <a href="#" class="underline">Read more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Blog Post 6 -->
+                <div class="shadow bg-white rounded-md">
+                    <div class="relative">
+                        <div class="absolute top-0 start-0 p-2">
+                            <span class="inline-flex items-center justify-center gap-2 bg-white/20 backdrop-blur-xl text-[13px] font-medium rounded-full text-white py-1 px-2">
+                                <span class="w-1.5 h-1.5 inline-block bg-white rounded-full"></span> 22 Aug 2022
+                            </span>
+                        </div>
+                        <img src="images/blog-19.jpg" class="rounded-md" alt="">
+                        <div class="absolute inset-x-0 top-auto bottom-0 p-2">
+                            <div class="bg-white/50 backdrop-blur-xl p-4 rounded-md">
+                                <div class="text-white text-center">
+                                    <h4 class="text-2xl font-semibold">Buy buildings</h4>
+                                    <p class="text-base font-medium mt-3">Lorenm ipsum dolor sit amet consectetur. Vitae
+                                        <a href="#" class="underline">Read more</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
         
     </section>
     <!-- End Blog-6 -->
