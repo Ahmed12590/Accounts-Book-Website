@@ -1181,10 +1181,11 @@ nav .fa{
 }
 
 /* Image styles */
-img {
+.relative img {
     width: 100%;
     border-radius: 0.375rem;
 }
+
 
 /* Text and overlay styles */
 .inset-x-0 {
