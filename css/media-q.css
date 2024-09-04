@@ -1,0 +1,490 @@
+
+/* ---------------------------media query */
+
+
+/* @media(max-width:768px) { */
+@media screen and (min-width: 481px) and (max-width: 768px) { 
+    .header-upper ul li a{
+        font-size: 12px;
+    }
+    .header-upper ul li i{
+        font-size: 12px;
+    }
+
+    .header-nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: wrap; */
+    }
+    #three{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        
+    }
+
+        
+        .banner-upper{
+            position: absolute;
+            top:25%;
+            left: 25%;
+            /* display: none; */
+        }
+
+        .banner-upper img{
+            width: 75%;
+        }
+
+        .boxx{
+            width: 100%;
+            height: auto;
+           box-shadow:8px -4px 17px rgb(0 0 0 / 34%);
+           margin: 30px 0;
+        }
+        .boxx img{
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .services-heading{
+            text-align: center;
+            padding: 0 100px;
+        }
+        .servies-list{
+            width: 150px;
+        }
+        .benefits-main{
+            padding: 0 5px;
+        }
+        .benefits-main .benefits-box{
+            width: 350px;
+            margin-top:30px ;
+        }
+
+        
+        .benefits-heading{
+            padding: 0 80px;
+        }
+
+        .benefits-heading h1{
+            font-size: 80px;
+        }
+        
+        .benefits-heading h3{
+            font-size: 30px;
+        }
+        
+        .benefits-heading h4{
+            font-size: 18px;
+        }
+        .benefits-heading h5{
+            font-size: 15px;
+        }
+        
+
+        .partner-heading{
+            padding: 0 50px;
+        }
+        .partner-heading h3{
+            font-size: 16px;
+        }
+        .partner-heading h1{
+            font-size: 35px;
+        }
+
+        /* --------------home page media end */
+        .abt-com-heading{
+            padding: 0 50px;
+        }
+        .abt-com-heading h3{
+            font-size: 20px;
+        }
+        .abt-com-heading h1{
+            font-size: 30px;
+        }
+
+        .team-heading{
+            padding: 0 50px;
+            margin-bottom: 30px;
+        }
+        .team-heading h1{
+            font-size: 40px;
+        }
+        .team-heading h2{
+            font-size: 30px;
+        }
+
+        /* --------about page end--------- */
+        .book-heading h2{
+            font-size: 30px;
+        }
+        .b-dtl-head h2{
+            font-size: 20px;
+        }
+        .det-main .det-left img{
+            width: 150px;
+        }
+        .det-main{
+            margin: 0 8vw;
+        }
+        .b-insights-main .b-insights-l img{
+            width: 250px;
+        }
+        
+
+        /* ---------bookkeeping page end------- */
+
+        
+        .footer-upper img{
+            width:150px;
+        }
+        
+        .footer-upper{
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-upper div{
+            margin-left: 30px;
+        }
+        
+        .footer-upper h3{
+            margin-top: 15px;
+        }
+        /* -----------------------footer area end----------- */
+
+        .cards-main .cards{
+            margin: 10px 0;
+        }
+        
+            /* --------------------side nav on mid screen */
+            .header-nav>ul{
+                background: var(--blue);
+                top: 0;
+                right: -200px;
+                height: 90vh;
+                width: 200px;
+                position: fixed;
+                padding-top: 50px;
+                display: flex;
+                flex-direction: column;
+                transition: right 0.5s;
+                justify-content: start;
+                z-index: 6;
+                
+            }
+            nav .fa{
+                display: block;
+                font-size: 25px;
+                padding: 10px 10px;
+                /* float: right; */
+                position: absolute;
+                top: 35px;
+                right: 35px;
+                color: var(--blue);
+            }
+    
+            nav ul .fa{
+                position:absolute;
+                top: 15px;
+                left: 15px;
+                cursor: pointer;
+                color: var(--white);
+            }
+            
+            nav ul li{
+                padding: 0 15px;
+            }
+            .header-nav ul li a{
+                color: var(--white);
+            }
+
+
+            
+nav ul .abt-drop{
+    display: contents;
+    /* position: absolute; */
+    background-color: inherit;
+    /* min-width: fit-content; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    box-shadow: none;
+    padding: 0 0;
+    /* top: 2.2rem; */
+    transition: all 0.9s;
+    /* list-style: none; */
+    /* padding: 10px 20px; */
+    /* z-index: 10; */
+    
+}
+
+nav ul .abt-drop li a{
+    padding: 20px 0;
+    display: inline;
+    font-size: 12px;
+    color: gray;
+
+}
+
+
+
+.abt:hover .abt-drop{
+    display: none;
+}
+
+
+nav ul .abt-drop li a:hover{
+display: none;
+}
+
+    
+}
+
+
+/* @media(max-width:320px) { */
+@media screen and (min-width: 200px) and (max-width: 481px) { 
+    .header-upper>div{
+        display: inline-block;
+    }
+    .header-upper ul li a{
+        font-size: 10px;
+    }
+    .header-upper ul li i{
+        font-size: 8px;
+    }
+    
+    .banner-upper{
+        position: absolute;
+        top:30%;
+        left: 0;
+        padding: 0 10px;
+        /* display: none; */
+    }
+
+    .banner-upper img{
+        width: 100%;
+    }
+
+    #four h1{
+        font-size: 25px;
+    }
+    
+    .four-text h4{
+        font-size: 20px;
+    }
+    
+    
+    #services .services-heading{
+    padding-top: 120px;
+    }
+    #services .services-heading h1{
+        font-size: 50px;
+       
+    }
+    .sec-five-triangle{
+        transform: rotate(180deg);
+        position: absolute;
+        width: 50px;
+    }
+    
+    .sec-five-triangle-right{
+        float: right;
+        width: 50px;
+    }
+    .servies-list{
+        width: 80%;
+        /* height: fit-content; */
+    }
+    
+
+    .six-content h1{
+        font-size:40px ;
+    }
+    
+    .benefits-heading{
+        padding: 0 45px;
+    }
+
+    .benefits-heading h1{
+        font-size: 30px;
+    }
+    
+    .benefits-heading h3{
+        font-size: 20px;
+    }
+    
+    .benefits-heading h4{
+        font-size: 15px;
+    }
+    .benefits-heading h5{
+        font-size: 12px;
+    }
+    .benefits-main{
+        padding: 0 10px;
+    
+    }
+
+    .benefits-box{
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    
+    .partner-heading{
+        padding: 0 30px;
+    }
+    .partner-heading h3{
+        font-size: 16px;
+    }
+    .partner-heading h1{
+        font-size: 25px;
+    }
+
+    
+    .apmt-content h2{
+    font-size:35px;
+ }
+ 
+    .apmt-content p{
+     font-size: 15px;
+    }
+    
+    .apmt-link{
+        font-size: 12px;
+    }
+
+    /* ------bookkeeping------- */
+    
+    .book-heading{
+        padding:0 50px;
+    }
+    .book-heading h2{
+        font-size: 20px;
+    }
+    .b-dtl-head h2{
+        font-size: 20px;
+    }
+    .det-main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 8vw;
+    }
+    .det-main .det-left img{
+        width: 250px;
+    }
+    .det-main .det-right{
+        width: auto;
+    }
+    .b-insights-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .b-insights-r{
+        width: auto;
+    }
+    .b-insights-main .b-insights-l img{
+        width: 300px;
+    }
+    .book-list{
+        width: auto;
+    }
+
+    /* ---------bookkeeping page end------- */
+    
+    .footer-upper img{
+        width:150px;
+    }
+   
+    .footer-upper{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-upper div{
+        margin-left: 30px;
+    }
+
+     .footer-upper h3{
+        margin-top: 15px;
+    }
+
+
+    /* ---------------------footer area end---- */
+    .eight-heading h2{
+        font-size: 46px;
+
+    }
+        
+    .eight-heading h1{
+        font-size: 40px;
+        color: white;
+    }
+
+    .cards{
+        width: 568px;
+        text-align: center;
+        padding: 20px 0;
+        background-color: var(--white);
+    }
+
+    .footer-upper{
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+    .footer-upper div{
+        padding: 15px 0;
+    }
+    .footer-upper div h3{
+        font-size: 20px;
+    }
+
+    .footer-bar p{
+        font-size: 12px;
+        }
+
+
+        /* ----------------------------side nav on small screen */
+        nav>ul{
+            background: var(--blue);
+            top: 0;
+            right: -200px;
+            height: 80vh;
+            width: 200px;
+            position: fixed;
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            transition: right 0.5s;
+            z-index: 6;
+           
+        }
+        nav .fa{
+            display: block;
+            font-size: 25px;
+            padding: 10px 10px;
+            position: absolute;
+            top: 35px;
+            right: 10px;
+            color: var(--blue);
+            /* float: right; */
+        }
+
+        nav ul .fa{
+            position:absolute;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            color: var(--white);
+        }
+         
+        nav ul li{
+            padding: 0 15px;
+        }
+        .header-nav ul li a{
+            color: var(--white);
+        }
+
+   
+
+}

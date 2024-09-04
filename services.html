@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-q.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,38 +15,53 @@
 </head>
 <body>
     <header>
+        <!-- <img id="imghead" src="./images/logo-footer.png" alt=""> -->
         <div class="header-upper">
-            <div>
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i>02089250070</a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i>07530951855</a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i>info@superfinancial.co.uk</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i>(315) 907-4273</a></li>                    
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i>info@accountsbook.co.uk</a></li>
                 </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">Romana</a></li>
-                </ul>
-            </div>
            
         </div>
-        <!-- <div> -->
+    
                 <nav class="header-nav">
+                    <div class="logo">
+                       <a href="index.html">
+                           
+                           <img src="./images/logo.png">
+                        </a>
+                    </div>
                     <ul id="sidemenu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="#">Articles</a></li>
+                        <li class="abt"><a href="about.html">About Us<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="abt-drop">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about.html#team">Team</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="abt"><a href="services.html">Services<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="abt-drop">
+                                <li><a href="services.html#self-e">Self Employed</a></li>
+                                <li><a href="services.html#others">Other Services</a></li>
+                                <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
+                                <!-- <li><a href="#">Catch Up Bookkeeping</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="abt"><a href="#">Resources<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="abt-drop">
+                                <li><a href="blog.html">Blogs</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                            </ul>
+                        </li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Limited Company</a></li>
-                        <li><a href="#">Tax Return Calculator</a></li>
+                        <li><a href="#">Book your Slot</a></li>
                         <i class="fa fa-times" onclick="closemenu()"></i>
                     </ul>
                 <i class="fa fa-bars" onclick="openmenu()"></i>
+
                 </nav>
-        <!-- </div> -->
+        
     </header>
 
 
@@ -54,38 +70,45 @@
         <h1>SEE HOW MUCH TAX YOU CAN CLAIM BACK.</h1>
         <div class="claim-main">
 
-                <div class="claim-text">
-                   <h4>CIS TAX RETURN 2021-2022</h4>
-                </div>
-        
-                <div class="claim-text">
-                    <h4>CIS TAX RETURN 2021-2022</h4>
-                </div>
-            
+            <a style="text-decoration: none; color: inherit;" href="#">
+                     <div class="claim-text">
+                        <h4>CIS TAX RETURN 2021-2022</h4>
+                    </div>
 
+            </a>
+
+            <a style="text-decoration: none; color: inherit;" href="#">
                 <div class="claim-text">
                     <h4>CIS TAX RETURN 2021-2022</h4>
                 </div>
+            </a>
+
+            <a style="text-decoration: none; color: inherit;" href="#">
+                <div class="claim-text">
+                    <h4>CIS TAX RETURN 2021-2022</h4>
+                </div>
+            </a>
+
         </div>
     </section>
 
 
-    <!-- ------------------------------------section five -->
-    <section id="five">
+    <!-- ------------------------------------section services --------------------- old section five-->
+    <!-- <section id="services"> -->
         <img src="./images/triangle.png" alt="" class="sec-five-triangle">
         <img src="./images/triangle.png" alt="" class="sec-five-triangle-right">
 
         
-        <div class="sec-five-heading">
+        <div class="services-heading">
             <h5>ONE-STOP-SHOP FOR YOUR BUSINESS NEEDS</h5>
             <h1>Services<h1>
-            <h3>Limided Company</h3>
+            <h2 class="sec-heading">Limited Company</h2>
         </div>
             
-            <div class="servies-main">
-                <div class="before-icon">
+            <div class="services-main">
+                <div class="services-box">
                     <i class="fa-solid fa-chart-line"></i>
-                         <div class="servies-list">
+                         <div class="services-list">
                             <h4>Annual Accounts and Returns</h4>
                             <p>We can relieve you and your staff of an enormous burden 
                             by taking care of all your bookkeeping and accounting 
@@ -96,9 +119,9 @@
                          </div>      
                 </div>    
 
-                <div class="before-icon">
+                <div class="services-box">
                     <i class="fa-solid fa-chart-line"></i>
-                         <div class="servies-list">
+                         <div class="services-list">
                             <h4>Tax Returns</h4>
                             <p>We can relieve you and your staff of an enormous burden 
                             by taking care of all your bookkeeping and accounting 
@@ -109,9 +132,9 @@
                          </div>      
                 </div>    
 
-                <div class="before-icon">
+                <div class="services-box">
                     <i class="fa-solid fa-comments-dollar"></i>
-                         <div class="servies-list">
+                         <div class="services-list">
                             <h4>VAT Returns</h4>
                             <p>We can relieve you and your staff of an enormous burden 
                             by taking care of all your bookkeeping and accounting 
@@ -122,9 +145,9 @@
                          </div>      
                 </div>    
 
-                <div class="before-icon">
+                <div class="services-box">
                     <i class="fa-solid fa-circle-dollar-to-slot"></i>
-                         <div class="servies-list">
+                         <div class="services-list">
                             <h4>Payroll</h4>
                             <p>We can relieve you and your staff of an enormous burden 
                             by taking care of all your bookkeeping and accounting 
@@ -135,9 +158,9 @@
                          </div>      
                 </div>    
 
-                <div class="before-icon">
+                <div class="services-box">
                     <i class="fa-solid fa-chart-line"></i>
-                         <div class="servies-list">
+                         <div class="services-list">
                             <h4>Annual Accounts and Returns</h4>
                             <p>We can relieve you and your staff of an enormous burden 
                             by taking care of all your bookkeeping and accounting 
@@ -148,9 +171,9 @@
                          </div>      
                 </div>    
 
-                <div class="before-icon">
+                <div class="services-box">
                     <i class="fa-solid fa-book-journal-whills"></i>
-                         <div class="servies-list">
+                         <div class="services-list">
                             <h4>Bookkeeping</h4>
                             <p>We can relieve you and your staff of an enormous burden 
                             by taking care of all your bookkeeping and accounting 
@@ -164,106 +187,112 @@
             </div>
 
             <!-- --------------------------------self Employed----------------- -->
-            <h2 class="sec-heading">Self Employed</h2>
+            <section id="self-e">
 
-            <div class="servies-main">
-                <div class="before-icon">
-                    <i class="fa-solid fa-chart-line"></i>
-                         <div class="servies-list">
+                <h2 class="sec-heading">Self Employed</h2>
+                <div class="services-main">
+                    <div class="services-box">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <div class="services-list">
                             <h4>UTR Registration</h4>
                             <p>We can relieve you and your staff of an enormous burden 
-                            by taking care of all your bookkeeping and accounting 
-                            needs, including the preparation of your annual accounts.</p>
-                                                 
-                  
-                 
+                                by taking care of all your bookkeeping and accounting 
+                                needs, including the preparation of your annual accounts.</p>
+                                
+                                
+                                
                          </div>      
                 </div>          
 
-                <div class="before-icon">
+                <div class="services-box">
                     <i class="fa-brands fa-sellsy"></i>
-                         <div class="servies-list">
+                    <div class="services-list">
                             <h4>Self Assessment</h4>
                             <p>We can relieve you and your staff of an enormous burden 
                             by taking care of all your bookkeeping and accounting 
                             needs, including the preparation of your annual accounts.</p>
-                                                 
-                  
+                            
+                            
                  
                          </div>      
                 </div>          
 
-                <div class="before-icon">
+                <div class="services-box">
                     <i class="fa-solid fa-chart-line"></i>
-                         <div class="servies-list">
-                            <h4>Personal Tax</h4>
+                         <div class="services-list">
+                             <h4>Personal Tax</h4>
                             <p>We can relieve you and your staff of an enormous burden 
                             by taking care of all your bookkeeping and accounting 
                             needs, including the preparation of your annual accounts.</p>
                                                  
-                  
-                 
-                         </div>      
+                            
+                            
+                        </div>      
                 </div>          
 
-                <div class="before-icon">
+                <div class="services-box">
                     <i class="fa-solid fa-chart-line"></i>
-                         <div class="servies-list">
-                            <h4>HRMC Investigations</h4>
-                            <p>We can relieve you and your staff of an enormous burden 
+                    <div class="services-list">
+                        <h4>HRMC Investigations</h4>
+                        <p>We can relieve you and your staff of an enormous burden 
                             by taking care of all your bookkeeping and accounting 
                             needs, including the preparation of your annual accounts.</p>
-                                                 
-                  
-                 
-                         </div>      
+                            
+                            
+                            
+                        </div>      
                 </div>          
             </div>
-
+        </section>
+            
 
 
 <!-- -----------------------------------------others -->
 
-            <h2 class="sec-heading">Others</h2>
+                <section id="others">
 
-            <div class="servies-main">
-                <div class="before-icon">
+                    <h2 class="sec-heading">Others</h2>
+                    
+                    <div class="services-main">
+                <div class="services-box">
                     <i class="fa-solid fa-business-time"></i>
-                         <div class="servies-list">
+                         <div class="services-list">
                             <h4>Business Development</h4>
                             <p>We can relieve you and your staff of an enormous burden 
-                            by taking care of all your bookkeeping and accounting 
-                            needs, including the preparation of your annual accounts.</p>                                            
+                                by taking care of all your bookkeeping and accounting 
+                                needs, including the preparation of your annual accounts.</p>                                            
                          </div>      
                 </div>          
-
-                <div class="before-icon">
+                
+                <div class="services-box">
                     <i class="fa-solid fa-graduation-cap"></i>
-                         <div class="servies-list">
+                         <div class="services-list">
                             <h4>Education Sector Consultancy</h4>
                             <p>We can relieve you and your staff of an enormous burden 
-                            by taking care of all your bookkeeping and accounting 
+                                by taking care of all your bookkeeping and accounting 
                             needs, including the preparation of your annual accounts.</p>
                          </div>      
                 </div>          
 
-                <div class="before-icon">
+                <div class="services-box">
                     <i class="fa-solid fa-chart-line"></i>
-                         <div class="servies-list">
+                    <div class="services-list">
                             <h4>ISO Management Consultancy</h4>
                             <p>We can relieve you and your staff of an enormous burden 
                             by taking care of all your bookkeeping and accounting 
                             needs, including the preparation of your annual accounts.</p>
                          </div>      
                 </div>          
-
+                
                 
             </div> 
             <div class="center">
-                <button class="btn">View All Services</button>
+                <!-- <button class="btn">View All Services</button> -->
+                <a href="#" class="btn">View All Services</a>
             </div>
+        </section>
 
-    </section>
+    <!-- </section> -->
 
 
     <!-- ------------------------footer -->
@@ -271,7 +300,7 @@
     <section id="footer">
         <div class="footer-upper">
             <div>
-                <img src="./images/logo-footer.png" alt="">
+                <img src="./images/logo.png" alt="">
             </div>
 
             <div>
@@ -279,9 +308,10 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Ebooks</a></li>
-                    <li><a href="#">Podcasts Episodes</a></li>
-                    <li><a href="#">Blogs & News</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -298,45 +328,19 @@
             <div class="footer-social">
                 <h3>Contact Us</h3>
                 <ul>
-                    <li><i class="fa-solid fa-location-dot"></i>275 High Road<br> Leyton London E10 5QN</li>
-                    <li><i class="fa-solid fa-envelope"></i>info@superfinancial.co.uk</li>
-                    <li><i class="fa-solid fa-phone"></i>07530951855</li>
+                    <li><i class="fa-solid fa-location-dot"></i>182, High Road, Willesden,<br> London, United Kingdom, NW10 2PB</li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@accounts.co">info@accountsbook.co</a></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:(315) 907-4273">(315) 907-4273</a></li>
                   
                 </ul>
             </div>
         </div>
         <div class="footer-bar">
-            <p>© superfinancial.co.uk. All rights reserved.</p>
+            <p>All Rights Reserved © 2024 <a href="https://accountsbook.co">accountsbook.co</a></p>
         </div>
     </section>
 
-
-<script>
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu(){
-sidemenu.style.right = "0";
-}
-
-function closemenu(){
-sidemenu.style.right = "-200px";
-}
-
-//     window.addEventListener("click", myFunction);
-
-// function myFunction() {
-//         sidemenu.style.right = "-200px";
-// }
-
-// window.addEventListener('click', function(event) {
-//         if (!sidemenu.contains(event.target)) {
-//             console.log("clicked");
-//             closemenu();
-//         }
-//     });
-
-</script>
-
+<script src="./js/script.js"></script>
 
 </body>
 </html>
