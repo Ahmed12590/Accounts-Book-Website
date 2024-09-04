@@ -10,10 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <title>Document</title>
+
+
+<title>Document</title>
 </head>
 <body>
+    
+        <!-- it was also added in accounts website i have commited -->
+    <!-- <div class="calendly-badge-widget">
+        <div class="calendly-badge-content" style="background: linear-gradient(rgb(239, 42, 3) 0%, rgb(255, 128, 36) 100%); color: rgb(255, 255, 255);">Schedule a free call</div></div> -->
 
 
 
@@ -65,10 +70,11 @@
                         </li>
                         <li class="abt"><a href="services.html">Services<i class="fa-solid fa-chevron-down"></i></a>
                             <ul class="abt-drop">
+                                <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
+                                <li><a href="catch-up-bookkeeping.html">Catch Up Bookkeeping</a></li>
+                                <li><a href="services.html#limited">Limited Company</a></li>
                                 <li><a href="services.html#self-e">Self Employed</a></li>
                                 <li><a href="services.html#others">Other Services</a></li>
-                                <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
-                                <!-- <li><a href="#">Catch Up Bookkeeping</a></li> -->
                             </ul>
                         </li>
                         <li class="abt"><a href="#">Resources<i class="fa-solid fa-chevron-down"></i></a>
@@ -258,7 +264,26 @@
                     </div>
                 </section>
 
-    
+
+
+
+                <section id="calendly">
+                    <!-- Calendly badge widget begin -->
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async=""></script>
+                    <script type="text/javascript">
+                      window.onload = function() {
+                        Calendly.initBadgeWidget({
+                          url: 'https://calendly.com/info-accsbook/30min',
+                          text: 'Schedule a free call',
+                          color: '#2F4680',
+                          textColor: '#ffffff',
+                          width: '100%'
+                        });
+                      }
+                    </script>
+                    <!-- Calendly badge widget end -->
+                  </section>
         
     <script src="./js/script.js"></script>
 </body>
