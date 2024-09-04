@@ -1352,6 +1352,8 @@ padding-right: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .calculator-container {
