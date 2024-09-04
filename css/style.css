@@ -2,7 +2,6 @@
     --blue:#2F4680;
     --white:#FEFEFF;
     --yellow:#F99500;
-
 }
 
 *{
@@ -13,31 +12,72 @@
 body{
     font-family: 'Poppins', Courier, monospace;
 }
-header img{
-    width: 140px;
-    position: absolute;
-    padding-left: 30px;
-    transition: 0.6s;
+
+.btn{
+    font-size: 23px;
+    background-color: var(--blue);
+    color: #D9D9D9;
+    padding: 5px 10px;
+    border: 0.5px solid var(--blue);
+    border-radius: 10px;
+    margin: 4vw 0;
+    text-transform: uppercase;
+    transition: 0.5s;
+    text-decoration: none;
+    display: inline-block;
 }
+
+.btn:hover{
+    border: 0.5px solid var(--blue);
+    color: var(--blue);
+    background-color: transparent;
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 17px;
+    margin-top: 30px;
+    padding: 5px;
+    display: inline-block;
+    border: 0.7px solid var(--white);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.link:hover{
+    /* padding: 5px 20px; */
+    background-color: white;
+    color: var(--blue);
+    border: 0.5px solid black;
+}
+
 header{
     position: sticky;
     top: 0;
     z-index: 99;
 }
 
+header img{
+    width: 140px;
+    position: absolute;
+    padding-left: 30px;
+    transition: 0.6s;
+}
+
+
 .header-upper{
     width: 100%;
     height: 31px;
     background-color: var(--blue);
+    padding-left: 50px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    /* padding-left: 50px; */
 }
 
-.header-upper div ul{
+.header-upper ul{
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
@@ -239,12 +279,13 @@ color: #080606;
 /* -----------------------------------------  section appointment      home page */
 #appointment{
     width: 100%;
-    height: 30vw;
+    /* height: 30vw; */
     background-color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom:20px ;
+    padding: 2vw 0;
 
 }
 
@@ -254,33 +295,17 @@ color: #080606;
 }
 
 .apmt-content h2{
-   font-size:3vw;
+   font-size:40px;
    color: var(--white);
    padding-bottom: 2vw;
 }
 
 .apmt-content p{
-    font-size: 1.7vw;
+    font-size: 20px;
     color: var(--white);
 }
 
-.apmt-link{
-    text-decoration: none;
-    color: var(--white);
-    font-size: 20px;
-    margin-top: 30px;
-    padding: 5px;
-    display: inline-block;
-    border: 0.7px solid var(--white);
-    border-radius: 5px;
-    transition: 0.5s;
-}
-.apmt-link:hover{
-    /* padding: 5px 20px; */
-    background-color: white;
-    color: var(--blue);
-    border: 0.5px solid black;
-}
+
 
 /* -------------------------home page end ---------------------------------------------------- */
 
@@ -329,11 +354,10 @@ color: #080606;
 
    
 /* -----------------------section five                        services page */
-
-#five{
-    width: 100%;
+/* 
+#services{
     margin-top: 30px;
-}
+} */
 
 .sec-five-triangle{
     transform: rotate(180deg);
@@ -344,38 +368,44 @@ color: #080606;
     float: right;
 }
 
-.sec-five-heading{
+.services-heading{
     text-align: center;
     padding: 0 100px;
+    margin-top: 30px;
 }
-#five .sec-five-heading h1{
+.services-heading h1{
     font-size: 88px;
     color: var(--blue);
     text-transform: uppercase;
     
 }
-
-.servies-main{
+#self-e{
+    padding-top: 30px;
+}
+#others{
+    padding-top: 30px;
+}
+.services-main{
     margin-top: 90px;
     margin: 0 25px;
     display: flex;
     /* justify-content: space-around; */
     flex-wrap: wrap;
 }
-.servies-list{
+.services-list{
     width: 340px;
     /* height: fit-content; */
 }
-.servies-list h4{
+.services-list h4{
     font-size: 23px;
     font-weight: 700;
 }
-.before-icon{
+.services-box{
     display: flex;
     margin-top: 50px;
 }
 
-.servies-main i{
+.services-main i{
     color: var(--blue);
     font-size: 30px;
     margin-right: 10px;
@@ -384,30 +414,10 @@ color: #080606;
 .sec-heading{
     font-size: 30px;
     color: #2F4680;
-    margin:50px 0 0 30px
+    margin:50px 0 0 30px;
+    text-align: center;
 }
 
-.btn{
-    font-size: 23px;
-    background-color: var(--blue);
-    color: #D9D9D9;
-    padding: 10px 15px;
-    border: 0.5px solid var(--blue);
-    border-radius: 10px;
-    margin: 4vw 0;
-    text-transform: uppercase;
-    transition: 0.5s;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn:hover{
-    border: 0.5px solid var(--blue);
-    color: var(--blue);
-    background-color: transparent;
-    cursor: pointer;
-
-}
 
 .center{
     text-align: center;
@@ -617,32 +627,56 @@ justify-content: space-around;
 
 /* -----------------------page bookkeeping */
 
-#bookkeeping{
+/* #bookkeeping{
     margin: 3vw 0;
+} */
+
+.book-banner{
+    background-color: #FFF4F0;
+    padding: 3vw 6vw;
+    display: flex;
 }
 
-.book-heading{
+.book-left{
+    width: 45%;
+}
+.book-left h2{
+    color: var(--blue);
+    font-size: 40px;
+    padding-top: 3vw;
+}
+.book-left p{
+    font-size: 16px;
+}
+.book-right{
+    width: 40%;
+    padding-left: 9vw;
+}
+
+.book-right img{
+    width: 500px;
+
+}
+/* .book-heading{
     text-align: center;
     padding: 0 100px;
-}
+} */
 
-.book-heading h2{
+/* .book-heading h2{
     font-size: 50px;
     font-weight: 700;
     color: var(--blue);
-}
+} */
 
 
 .book-main{
-    margin-top: 90px;
-    margin: 0 25px;
+    margin: 80px 25px;
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .book-list{
     width: 340px;
-    /* height: fit-content; */
 }
 .book-list h4{
     font-size: 23px;
@@ -681,7 +715,7 @@ justify-content: space-around;
 }
 .det-right{
     margin: 8vw 0 0 5vw;
-    width: 45%;
+    width: 50%;
 }
 .det-right h5{
     padding-top: 10px;
@@ -929,13 +963,17 @@ color: var(--yellow);
 .footer-upper{
     background-color: #404040;
     width: 100%;
-    height: 270px;
+    /* height: 270px; */
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     /* align-items: center; */
     color: var(--white);
     padding: 30px 0;
+}
+.footer-upper img{
+    width: 200px;
+    margin-top: 5vw;
 }
 
 .footer-upper div ul{
@@ -964,297 +1002,19 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+.footer-bar a{
+    text-decoration: none;
+    color: inherit;
+}
+.footer-bar a:hover{
+    color: black;
+}
 
 nav .fa{
     display: none;
 }
 
 
-
-/* ---------------------------media query */
-
-
-@media(max-width:768px) {
-
-    /* .header-nav{
-        width: 100%;
-        height: 100px;
-        background-color: #D9D9D9;
-    } */
-
-    .header-nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        /* flex-wrap: wrap; */
-    }
-    #three{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        
-    }
-
-        
-        .banner-upper{
-            position: absolute;
-            top:25%;
-            left: 25%;
-            /* display: none; */
-        }
-
-        .banner-upper img{
-            width: 75%;
-        }
-
-        .boxx{
-            width: 100%;
-            height: auto;
-           box-shadow:8px -4px 17px rgb(0 0 0 / 34%);
-           margin: 30px 0;
-        }
-        .boxx img{
-            object-fit: cover;
-            width: 100%;
-        }
-
-        .sec-five-heading{
-            text-align: center;
-            padding: 0 100px;
-        }
-        .servies-list{
-            width: 150px;
-        }
-        .benefits-main{
-            padding: 0 5px;
-        }
-        .benefits-main .benefits-box{
-            width: 350px;
-            margin-top:30px ;
-        }
-        .cards-main .cards{
-            margin: 10px 0;
-            
-        }
-
-        .footer-upper img{
-            width:150px;
-
-        }
-        .footer-upper div{
-            margin-left: 10px;
-        }
-
-            /* --------------------side nav on mid screen */
-            .header-nav>ul{
-                background: var(--blue);
-                top: 0;
-                right: -200px;
-                height: 90vh;
-                width: 200px;
-                position: fixed;
-                padding-top: 50px;
-                display: flex;
-                flex-direction: column;
-                transition: right 0.5s;
-                justify-content: start;
-                z-index: 6;
-                
-            }
-            nav .fa{
-                display: block;
-                font-size: 25px;
-                padding: 10px 10px;
-                /* float: right; */
-                position: absolute;
-                top: 35px;
-                right: 35px;
-                color: var(--blue);
-            }
-    
-            nav ul .fa{
-                position:absolute;
-                top: 15px;
-                left: 15px;
-                cursor: pointer;
-                color: var(--white);
-            }
-            
-            nav ul li{
-                padding: 0 15px;
-            }
-            .header-nav ul li a{
-                color: var(--white);
-            }
-
-
-            
-nav ul .abt-drop{
-    display: contents;
-    /* position: absolute; */
-    background-color: inherit;
-    /* min-width: fit-content; */
-    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-    box-shadow: none;
-    padding: 0 0;
-    /* top: 2.2rem; */
-    transition: all 0.9s;
-    /* list-style: none; */
-    /* padding: 10px 20px; */
-    /* z-index: 10; */
-    
-}
-
-nav ul .abt-drop li a{
-    padding: 20px 0;
-    text-decoration: none;
-    display: inline;
-    font-size: 12px;
-    color: gray;
-
-}
-
-
-
-.abt:hover .abt-drop{
-    display: none;
-}
-
-
-nav ul .abt-drop li a:hover{
-display: none;
-}
-
-    
-}
-
-
-@media(max-width:320px) {
-
-
-    .banner-upper{
-        position: absolute;
-        top:30%;
-        left: 0;
-        padding: 0 10px;
-        /* display: none; */
-    }
-
-    .banner-upper img{
-        width: 100%;
-    }
-
-    #four h1{
-        font-size: 25px;
-    }
-    
-    .four-text h4{
-        font-size: 20px;
-    }
-    
-    
-    #five .sec-five-heading{
-    padding-top: 120px;
-    }
-    #five .sec-five-heading h1{
-        font-size: 50px;
-       
-    }
-    .servies-list{
-        width: 80%;
-        /* height: fit-content; */
-    }
-    
-
-    .six-content h1{
-        font-size:40px ;
-    }
-    
-    .benefits-heading h1{
-        font-size: 60px;
-    }
-    .benefits-main{
-        padding: 0 10px;
-    
-    }
-
-    .benefits-box{
-        width: 90%;
-        padding: 0 10px;
-    }
-    .eight-heading h2{
-        font-size: 46px;
-       
-    }
-        
-    .eight-heading h1{
-        font-size: 40px;
-        color: white;
-    }
-
-    .cards{
-        width: 568px;
-        text-align: center;
-        padding: 20px 0;
-        background-color: var(--white);
-    }
-
-    .footer-upper{
-        height: auto;
-        display: flex;
-        justify-content: space-around;
-        /* align-items: center; */
-        flex-direction: column;
-    }
-    .footer-upper div{
-        padding: 15px 0;
-    }
-    .footer-upper div h3{
-        font-size: 20px;
-    }
-
-    .footer-bar p{
-        font-size: 12px;
-        }
-
-
-        /* ----------------------------side nav on small screen */
-        nav ul{
-            background: var(--blue);
-            top: 0;
-            right: -200px;
-            height: 80vh;
-            width: 200px;
-            position: fixed;
-            padding-top: 70px;
-            display: flex;
-            flex-direction: column;
-            transition: right 0.5s;
-            z-index: 6;
-           
-        }
-        nav .fa{
-            display: block;
-            font-size: 25px;
-            padding: 10px 10px;
-            float: right;
-        }
-
-        nav ul .fa{
-            position:absolute;
-            top: 15px;
-            left: 15px;
-            cursor: pointer;
-            color: var(--white);
-        }
-         
-        nav ul li{
-            padding: 0 15px;
-        }
-        .header-nav ul li a{
-            color: var(--white);
-        }
-}
 
 
 

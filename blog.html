@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-q.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,39 +21,56 @@
 <body>
 
     <header>
+        <!-- <img id="imghead" src="./images/logo-footer.png" alt=""> -->
         <div class="header-upper">
-            <div>
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i>02089250070</a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i>07530951855</a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i>info@superfinancial.co.uk</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i>(315) 907-4273</a></li>                    
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i>info@accountsbook.co.uk</a></li>
                 </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">Romana</a></li>
-                </ul>
-            </div>
-
+           
         </div>
-        <!-- <div> -->
-        <nav class="header-nav">
-            <ul id="sidemenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="blog.html">Articles</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="#">Limited Company</a></li>
-                <li><a href="#">Tax Return Calculator</a></li>
-                <i class="fa fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <!-- </div> -->
+    
+                <nav class="header-nav">
+                    <div class="logo">
+                       <a href="index.html">
+                           
+                           <img src="./images/logo.png">
+                        </a>
+                    </div>
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="abt"><a href="about.html">About Us<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="abt-drop">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about.html#team">Team</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="abt"><a href="services.html">Services<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="abt-drop">
+                                <li><a href="services.html#self-e">Self Employed</a></li>
+                                <li><a href="services.html#others">Other Services</a></li>
+                                <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
+                                <!-- <li><a href="#">Catch Up Bookkeeping</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="abt"><a href="#">Resources<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="abt-drop">
+                                <li><a href="blog.html">Blogs</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Book your Slot</a></li>
+                        <i class="fa fa-times" onclick="closemenu()"></i>
+                    </ul>
+                <i class="fa fa-bars" onclick="openmenu()"></i>
+
+                </nav>
+        
     </header>
+
+
 
 
 
@@ -174,7 +192,7 @@
     <section id="footer">
         <div class="footer-upper">
             <div>
-                <img src="./images/logo-footer.png" alt="">
+                <img src="./images/logo.png" alt="">
             </div>
 
             <div>
@@ -182,9 +200,10 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Ebooks</a></li>
-                    <li><a href="#">Podcasts Episodes</a></li>
-                    <li><a href="blog.html">Blogs & News</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -194,7 +213,7 @@
                     <li><a href="#"><i class="fa-brands fa-facebook"></i>Super Financial</a></li>
                     <li><a href="#"><i class="fa-brands fa-instagram"></i>Super Financial</a></li>
                     <li><a href="#"><i class="fa-brands fa-x-twitter"></i>Super Financial</a></li>
-
+                    
                 </ul>
             </div>
 
@@ -202,17 +221,16 @@
                 <h3>Contact Us</h3>
                 <ul>
                     <li><i class="fa-solid fa-location-dot"></i>275 High Road<br> Leyton London E10 5QN</li>
-                    <li><i class="fa-solid fa-envelope"></i>info@superfinancial.co.uk</li>
-                    <li><i class="fa-solid fa-phone"></i>07530951855</li>
-
+                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@accounts.co">info@accountsbook.co</a></li>
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:(315) 907-4273">(315) 907-4273</a></li>
+                  
                 </ul>
             </div>
         </div>
         <div class="footer-bar">
-            <p>© Accounts-Books All rights reserved.</p>
+            <p>All Rights Reserved © 2024 <a href="https://accountsbook.co">accountsbook.co</a></p>
         </div>
     </section>
-
 
 </body>
 
