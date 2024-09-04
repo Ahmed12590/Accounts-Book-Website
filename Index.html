@@ -23,11 +23,6 @@
        // Initialize Lenis
        const lenis = new Lenis()
 
-       // Log the scroll event (optional)
-       lenis.on('scroll', (e) => {
-           console.log(e)
-       })
-
        // Animation frame function to handle smooth scrolling
        function raf(time) {
            lenis.raf(time)
@@ -37,6 +32,7 @@
        // Start the animation frame loop
        requestAnimationFrame(raf)
    </script>
+
     <header>
         <!-- <img id="imghead" src="./images/logo-footer.png" alt=""> -->
         <div class="header-upper">
@@ -77,6 +73,9 @@
                                 <li><a href="testimonials.html">Testimonials</a></li>
                             </ul>
                         </li>
+                        
+                        <li><a href="calculator.html"> 
+                            Tax Return Calculator</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="#">Book your Slot</a></li>
                         <i class="fa fa-times" onclick="closemenu()"></i>

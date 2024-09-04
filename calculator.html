@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-q.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Tax Return Calculator</title>
+  </head>
+  <body>
+    <!-- Include Lenis for smooth scrolling -->
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <script>
+      // Initialize Lenis
+      const lenis = new Lenis();
+
+      // Animation frame function to handle smooth scrolling
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      // Start the animation frame loop
+      requestAnimationFrame(raf);
+    </script>
+
+    <header>
+      <!-- <img id="imghead" src="./images/logo-footer.png" alt=""> -->
+      <div class="header-upper">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-phone"></i>(315) 907-4273</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-envelope"></i>info@accountsbook.co.uk</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <nav class="header-nav">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./images/logo.png" />
+          </a>
+        </div>
+        <ul id="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li class="abt">
+            <a href="about.html"
+              >About Us<i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul class="abt-drop">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html#team">Team</a></li>
+            </ul>
+          </li>
+          <li class="abt">
+            <a href="services.html"
+              >Services<i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul class="abt-drop">
+              <li><a href="services.html#self-e">Self Employed</a></li>
+              <li><a href="services.html#others">Other Services</a></li>
+              <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
+              <!-- <li><a href="#">Catch Up Bookkeeping</a></li> -->
+            </ul>
+          </li>
+          <li class="abt">
+            <a href="#">Resources<i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="abt-drop">
+              <li><a href="blog.html">Blogs</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+          </li>
+
+          <li><a href="calculator.html"> Tax Return Calculator</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Book your Slot</a></li>
+          <i class="fa fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </header>
+
+    <section class="calculator-section">
+      <div class="calculator-container">
+        <div class="calculator-left">
+          <h2>Find out how much tax you can claim back</h2>
+
+          <p>
+            Fill in the form and determine how much tax you can get back for the
+            previous financial year.
+          </p>
+          <p>
+            Fill in the form and determine how much tax you can get back for the
+            previous financial year.
+          </p>
+          <p>
+            This way, you’ll have the guarantee that your tax return declaration
+            is accurate, filed on time, and that you will not pay more tax than
+            you have to.
+          </p>
+          <img
+            src="images/blog-17.jpg"
+            alt="Trustpilot"
+            class="trustpilot-img"
+          />
+        </div>
+
+        <div class="calculator-right">
+          <h3>Fill in the form below</h3>
+          <form action="" method="POST" class="calculator-form">
+            <label for="name">Last name and First name*</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Last name and First name"
+              required
+            />
+            <span class="error">The field is required.</span>
+
+            <label for="phone">Phone number*</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone number"
+              required
+            />
+            <span class="error">The field is required.</span>
+            <!-- Dropdown for Tax options -->
+            <label for="tax-options">Select Tax Calculator</label>
+            <select id="tax-options" name="tax-options" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="tax2023-2024">Tax Return 2023/2024</option>
+              <option value="tax2022-2023">Tax Return 2022/2023</option>
+              <option value="crypto">Self-Assessment Crypto</option>
+              <option value="uber">Uber Tax Calculator</option>
+              <option value="rebate">Tax Rebate Calculator</option>
+            </select>
+            <span class="error">Please select a tax option.</span>
+
+            <div class="income-group">
+              <h4>Employee/Agency income</h4>
+              <label for="employee-income">Income £</label>
+              <input
+                type="number"
+                id="employee-income"
+                name="employee-income"
+                value="0"
+              />
+
+              <label for="employee-taxes">Employee taxes £</label>
+              <input
+                type="number"
+                id="employee-taxes"
+                name="employee-taxes"
+                value="0"
+              />
+              <input
+                type="number"
+                id="employee-taxes"
+                name="employee-taxes"
+                value="0"
+              />
+            </div>
+
+            <div class="self-employed-group">
+              <h4>Self Employed Income</h4>
+              <label for="gross-income">Gross Income £</label>
+              <input
+                type="number"
+                id="gross-income"
+                name="gross-income"
+                value="0"
+              />
+            </div>
+
+            <div class="expenses-group">
+              <h4>Eligible Expenses</h4>
+              <input type="number" id="expenses" name="expenses" value="0" />
+            </div>
+
+            <button type="submit">Calculate</button>
+            <span class="error general-error"
+              >One or more fields have an error. Please check and try
+              again.</span
+            >
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------footer -->
+    <section id="footer">
+      <div class="footer-upper">
+        <div>
+          <img src="./images/logo.png" alt="" />
+        </div>
+
+        <div>
+          <h3>Our Pages</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h3>Social Links</h3>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-facebook"></i>Super Financial</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-instagram"></i>Super Financial</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-x-twitter"></i>Super Financial</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>182, High Road,
+              Willesden,<br />
+              London, United Kingdom, NW10 2PB
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i
+              ><a href="mailto:info@accounts.co">info@accountsbook.co</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i
+              ><a href="tel:(315) 907-4273">(315) 907-4273</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <p>
+          All Rights Reserved © 2024
+          <a href="https://accountsbook.co">accountsbook.co</a>
+        </p>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

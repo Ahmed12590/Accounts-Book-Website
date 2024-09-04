@@ -1241,3 +1241,218 @@ nav .fa{
         margin-top: 2rem;
     }
 }
+
+/* contact page form csss  */
+
+
+.contact-sec{
+    padding-bottom: 5rem;
+    padding-left: 20rem;
+padding-right: 20rem;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    /* max-width: 400px; */
+    width: 90%;
+    
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2F4680;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .contact-sec {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-sec {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .contact-form {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-sec {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contact-form h2 {
+        font-size: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+}
+
+/* contact form css end  */
+
+
+
+
+/* calculator page csss  */
+
+.calculator-section {
+    background-color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.calculator-left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.calculator-left h2 {
+    color: #2f4680;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.calculator-left p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.calculator-left img.trustpilot-img {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.calculator-right {
+    flex: 1;
+    background-color: #2f4680;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.calculator-right h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.calculator-form input, 
+.calculator-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+}
+
+.calculator-form select {
+    background-color: #ffffff;
+}
+
+.error {
+    color: #f00;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: none; /* You can use JS to show/hide error */
+}
+
+.general-error {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.income-group, .self-employed-group, .expenses-group {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ffffff;
+    color: #2f4680;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d335c;
+    color: #ffffff;
+}
+
+
+
+/* calulator page css end  */
