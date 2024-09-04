@@ -42,10 +42,11 @@
                         </li>
                         <li class="abt"><a href="services.html">Services<i class="fa-solid fa-chevron-down"></i></a>
                             <ul class="abt-drop">
+                                <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
+                                <li><a href="catch-up-bookkeeping.html">Catch Up Bookkeeping</a></li>
+                                <li><a href="services.html#limited">Limited Company</a></li>
                                 <li><a href="services.html#self-e">Self Employed</a></li>
                                 <li><a href="services.html#others">Other Services</a></li>
-                                <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
-                                <!-- <li><a href="#">Catch Up Bookkeeping</a></li> -->
                             </ul>
                         </li>
                         <li class="abt"><a href="#">Resources<i class="fa-solid fa-chevron-down"></i></a>
@@ -172,8 +173,25 @@
     </div>
 </section>
 
+<section id="calendly">
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async=""></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        Calendly.initBadgeWidget({
+          url: 'https://calendly.com/info-accsbook/30min',
+          text: 'Schedule a free call',
+          color: '#2F4680',
+          textColor: '#ffffff',
+          width: '100%'
+        });
+      }
+    </script>
+    <!-- Calendly badge widget end -->
+  </section>
+
+
 <script src="./js/script.js"></script>
-
-
 </body>
 </html>
