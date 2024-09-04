@@ -47,55 +47,56 @@
 
 
 
-    <header>
-        <!-- <img id="imghead" src="./images/logo-footer.png" alt=""> -->
-        <div class="header-upper">
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-phone"></i>(315) 907-4273</a></li>                    
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i>info@accountsbook.co.uk</a></li>
+<header>
+    <!-- <img id="imghead" src="./images/logo-footer.png" alt=""> -->
+    <div class="header-upper">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-phone"></i>(315) 907-4273</a></li>                    
+                <li><a href="#"><i class="fa-solid fa-envelope"></i>info@accountsbook.co.uk</a></li>
+            </ul>
+       
+    </div>
+
+            <nav class="header-nav">
+                <div class="logo">
+                   <a href="index.html">
+                       
+                       <img src="./images/logo.png">
+                    </a>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="abt"><a href="about.html">About Us<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="abt-drop">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html#team">Team</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="abt"><a href="services.html">Services<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="abt-drop">
+                            <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
+                            <li><a href="catch-up-bookkeeping.html">Catch Up Bookkeeping</a></li>
+                            <li><a href="services.html#limited">Limited Company</a></li>
+                            <li><a href="services.html#self-e">Self Employed</a></li>
+                            <li><a href="services.html#others">Other Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="abt"><a href="#">Resources<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="abt-drop">
+                            <li><a href="blog.html">Blogs</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Book your Slot</a></li>
+                    <i class="fa fa-times" onclick="closemenu()"></i>
                 </ul>
-           
-        </div>
+            <i class="fa fa-bars" onclick="openmenu()"></i>
+
+            </nav>
     
-                <nav class="header-nav">
-                    <div class="logo">
-                       <a href="index.html">
-                           
-                           <img src="./images/logo.png">
-                        </a>
-                    </div>
-                    <ul id="sidemenu">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="abt"><a href="about.html">About Us<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="abt-drop">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="about.html#team">Team</a></li>
-                            </ul>
-
-                        </li>
-                        <li class="abt"><a href="services.html">Services<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="abt-drop">
-                                <li><a href="services.html#self-e">Self Employed</a></li>
-                                <li><a href="services.html#others">Other Services</a></li>
-                                <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
-                                <!-- <li><a href="#">Catch Up Bookkeeping</a></li> -->
-                            </ul>
-                        </li>
-                        <li class="abt"><a href="#">Resources<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="abt-drop">
-                                <li><a href="blog.html">Blogs</a></li>
-                                <li><a href="testimonials.html">Testimonials</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Book your Slot</a></li>
-                        <i class="fa fa-times" onclick="closemenu()"></i>
-                    </ul>
-                <i class="fa fa-bars" onclick="openmenu()"></i>
-
-                </nav>
-        
-    </header>
+</header>
 
 
 
@@ -300,6 +301,27 @@
         </div>
     </section>
 
-</body>
 
+
+    
+    <section id="calendly">
+        <!-- Calendly badge widget begin -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async=""></script>
+        <script type="text/javascript">
+          window.onload = function() {
+            Calendly.initBadgeWidget({
+              url: 'https://calendly.com/info-accsbook/30min',
+              text: 'Schedule a free call',
+              color: '#2F4680',
+              textColor: '#ffffff',
+              width: '100%'
+            });
+          }
+        </script>
+        <!-- Calendly badge widget end -->
+      </section>
+
+    <script src="./js/script.js"></script>
+</body>
 </html>
