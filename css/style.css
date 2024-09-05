@@ -9,6 +9,7 @@
     margin: 0px;
 } 
 
+
 body{
     font-family: 'Poppins', Courier, monospace;
 }
@@ -277,7 +278,7 @@ color: #080606;
 }
 /* -----------------------------------------  section appointment      home page */
 #appointment{
-    width: 100%;
+    /* width: 100%; */
     /* height: 30vw; */
     background-color: var(--blue);
     display: flex;
@@ -321,7 +322,7 @@ color: #080606;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     /* opacity: 0.6; */
-    width: 100%;
+    /* width: 100%; */
     height: 390px;
     padding-top: 120px;
     text-align: center;
@@ -424,78 +425,8 @@ color: #080606;
 /* ----------------------------------------services end ---------------- */
 
 
-/* -----------------------------section three */
 
 
-#three{
-display: flex;
-justify-content: space-around;
-
-}
-
-
-.boxx{
-    width: 377px;
-    height: auto;
-    /* border: 2px solid black; */
-   box-shadow:8px -4px 17px rgb(0 0 0 / 34%);
-   margin: 30px 0;
-}
-
-
-
-.boxx img{
-    object-fit: cover;
-}
-.boxx .boxx-cont{
-    margin: 10px 20px;
-
-}
-.boxx .boxx-cont h4{
-    text-transform: uppercase;
-    font-family: 'poppins',Arial, Helvetica, sans-serif;
-}
-
-.boxx .boxx-cont a{
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--blue);
-    padding-top: 20px;
-}
-
-
-
-
-/* -----------------section six */
-
-#six{
-    background-image: url(../images/Image546.png),linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    width: 100%;
-    height: 345px;
-}
-
-.six-content{
-    text-align: center;
-}
-
-.six-content h1{
-    font-size:70px ;
-    color: #D9D9D9;
-    text-transform: uppercase;
-
-
-}
-.six-content h1 span{
-    color: var(--yellow);
-}
-
-.six-content button:hover{ 
-   color: #D9D9D9;
-   border: 0.5px solid white ;
-}
 
 
 /* -------------------------------------section about       page about */
@@ -584,7 +515,6 @@ justify-content: space-around;
 }
 
 .team-content{
-    width: 100%;
     background-color: var(--blue);
     margin-top: 2vw;
     padding: 7vw 0;
@@ -592,8 +522,8 @@ justify-content: space-around;
 }
 .team-box-main{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 35px;
 
 }
@@ -819,7 +749,7 @@ width: 40%;
 
 
 
-/* -------------------------------------------------section testimonials          page testimonials */
+/* ----------------------------------------------        page testimonials */
 .testimonial{
     margin: 20px 0;
 }
@@ -897,12 +827,8 @@ width: 7rem;
 
 
 /* -----------------------------------------section contact                page contact */
-/* 
-.conct-img{
-width: 50vw;
-height: 100vh;
-border: 2px solid black;
-} */
+
+
 .conct-img img{
     object-fit: contain;
     z-index: 66;
@@ -969,53 +895,59 @@ text-align: center;
 
 }
 
+
+
+/* contact page form css  */
+
+
+.contact-sec{
+    padding-bottom: 5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    /* max-width: 400px; */
+    width: 90%;
+    
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2F4680;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #000000;
+}
+
 /* -------------------------------------page contact end---------------- */
-
-/* -------------------section eight */
-#eight{
-    padding-top: 30px;
-background-color: var(--blue);
-}
-.eight-heading{
-    text-align: center;
-}
-
-.eight-heading h2{
-font-size: 46px;
-color: var(--yellow);
-}
-
-.eight-heading h1{
-    font-size: 88px;
-    color: white;
-}
-
-.cards-main{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px 0;
-}
-.cards-main .cards{
-    width: 568px;
-    text-align: center;
-    padding: 20px 0;
-    background-color: var(--white);
-}
-
-.cards-main .cards h3{
-    font-size: 27px;
-    text-transform: uppercase;
-}
-
-.cards-main .cards h2{
-    font-size: 46px;
-    color: var(--blue);
-}
-
-.cards-main .cards img{
-    margin: 20px 0;
-}
 
 
 /* -----------------------------------section footer */
@@ -1301,55 +1233,7 @@ nav .fa{
     }
 }
 
-/* contact page form csss  */
 
-
-.contact-sec{
-    padding-bottom: 5rem;
-    padding-left: 20rem;
-padding-right: 20rem;
-}
-
-.contact-form {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    /* max-width: 400px; */
-    width: 90%;
-    
-}
-
-.contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    text-align: center;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contact-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #2F4680;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #000000;
-}
 
 
 /* Media Queries for Responsive Design */
@@ -1380,7 +1264,7 @@ padding-right: 20rem;
     }
 
     .contact-form {
-        width: 100%;
+        width: 80%;
         padding: 15px;
     }
 
@@ -1390,6 +1274,7 @@ padding-right: 20rem;
 
     .contact-form input,
     .contact-form textarea {
+        width: 90%;
         font-size: 14px;
     }
 
@@ -1424,7 +1309,7 @@ padding-right: 20rem;
 }
 
 .calculator-left {
-    flex: 1;
+    flex: 1; 
     padding-right: 20px;
 }
 
@@ -1441,8 +1326,9 @@ padding-right: 20rem;
 }
 
 .calculator-left img.trustpilot-img {
-    width: 150px;
+    width: 90%;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 .calculator-right {
