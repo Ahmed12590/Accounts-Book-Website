@@ -79,7 +79,7 @@
               <li><a href="services.html#self-e">Self Employed</a></li>
               <li><a href="services.html#others">Other Services</a></li>
               <li><a href="bookkeeping.html">Regular Bookkeeping</a></li>
-              <!-- <li><a href="#">Catch Up Bookkeeping</a></li> -->
+              <li><a href="catch-up-bookkeeping.html">Catch Up Bookkeeping</a></li>
             </ul>
           </li>
           <li class="abt">
@@ -90,7 +90,7 @@
             </ul>
           </li>
 
-          <li><a href="calculator.html"> Tax Return Calculator</a></li>
+          <li><a href="calculator.html">Tax Return Calculator</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="#">Book your Slot</a></li>
           <i class="fa fa-times" onclick="closemenu()"></i>
@@ -117,37 +117,31 @@
             is accurate, filed on time, and that you will not pay more tax than
             you have to.
           </p>
-          <img
-            src="images/blog-17.jpg"
-            alt="Trustpilot"
-            class="trustpilot-img"
-          />
+          <img src="images/blog-17.jpg" alt="Trustpilot" class="trustpilot-img"/>
         </div>
 
         <div class="calculator-right">
           <h3>Fill in the form below</h3>
-          <form action="" method="POST" class="calculator-form">
+
+
+
+          <form action="send-email.php" method="POST" class="calculator-form">
             <label for="name">Last name and First name*</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Last name and First name"
-              required
-            />
+            
+            <input type="text" id="name" name="name" placeholder="Name" required/>
             <span class="error">The field is required.</span>
 
-            <label for="phone">Phone number*</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Phone number"
-              required
-            />
+            <input type="text" id="name" name="subject" placeholder="Subject" required/>
             <span class="error">The field is required.</span>
+
+            <input type="text" id="name" name="message" placeholder="Messege" required/>
+            <span class="error">The field is required.</span>
+
+            <!-- <label for="phone">Phone number*</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone number" required />
+            <span class="error">The field is required.</span> -->
             <!-- Dropdown for Tax options -->
-            <label for="tax-options">Select Tax Calculator</label>
+            <!-- <label for="tax-options">Select Tax Calculator</label>
             <select id="tax-options" name="tax-options" required>
               <option value="" disabled selected>Select an option</option>
               <option value="tax2023-2024">Tax Return 2023/2024</option>
@@ -197,9 +191,9 @@
             <div class="expenses-group">
               <h4>Eligible Expenses</h4>
               <input type="number" id="expenses" name="expenses" value="0" />
-            </div>
+            </div> -->
 
-            <button type="submit">Calculate</button>
+            <button type="submit">Submit</button>
             <span class="error general-error"
               >One or more fields have an error. Please check and try
               again.</span

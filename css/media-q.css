@@ -1,9 +1,22 @@
 
 /* ---------------------------media query */
 
+@media screen and (min-width: 768px) and (max-width: 1135px) { 
+
+    .header-nav>ul li a{
+        font-size: 10px;
+    }
+    .header-nav .logo img{
+        width: 100px;
+        top:35px
+    }
+}
+
 
 /* @media(max-width:768px) { */
 @media screen and (min-width: 481px) and (max-width: 768px) { 
+
+
     .header-upper ul li a{
         font-size: 12px;
     }
@@ -17,14 +30,9 @@
         justify-content: space-between;
         /* flex-wrap: wrap; */
     }
-    #three{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
         
-    }
+    /* ---home page-- */
 
-        
         .banner-upper{
             position: absolute;
             top:25%;
@@ -36,24 +44,7 @@
             width: 75%;
         }
 
-        .boxx{
-            width: 100%;
-            height: auto;
-           box-shadow:8px -4px 17px rgb(0 0 0 / 34%);
-           margin: 30px 0;
-        }
-        .boxx img{
-            object-fit: cover;
-            width: 100%;
-        }
 
-        .services-heading{
-            text-align: center;
-            padding: 0 100px;
-        }
-        .servies-list{
-            width: 150px;
-        }
         .benefits-main{
             padding: 0 5px;
         }
@@ -93,7 +84,8 @@
             font-size: 35px;
         }
 
-        /* --------------home page media end */
+        /* --------------home page end */
+
         .abt-com-heading{
             padding: 0 50px;
         }
@@ -116,14 +108,46 @@
         }
 
         /* --------about page end--------- */
-        .book-heading h2{
-            font-size: 30px;
+        
+        .book-banner{
+            padding: 3vw 6vw;
+            display: flex;
         }
+
+        .book-left{
+            width: 30%;
+        }
+        .book-left h2{
+            font-size: 20px;
+        }
+        .book-left p{
+            font-size: 12px;
+        }
+        .book-right img{
+            width: 280px;
+        }
+        .book-list{
+            width: 340px;
+        }
+
+        
+    
+         .apmt-content h2{
+        font-size:12px;
+        }
+     
+        .apmt-content p{
+         font-size: 15px;
+        }
+        
         .b-dtl-head h2{
             font-size: 20px;
         }
         .det-main .det-left img{
             width: 150px;
+        }
+        .det-main .det-right{
+            width: 200px;
         }
         .det-main{
             margin: 0 8vw;
@@ -131,10 +155,36 @@
         .b-insights-main .b-insights-l img{
             width: 250px;
         }
+        .b-insights-main .b-insights-r{
+            width: fit-content;
+        }
         
 
         /* ---------bookkeeping page end------- */
 
+        /* ------catchup-b------ */
+        .catchup-banner{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .catchup-left img{
+            width: 300px;
+        }
+        .catchup-right{
+            width: 50%;
+        }
+        .catchup-right h2{
+            font-size: 30px;
+        }
+
+        .catchup-main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* ------catchup-b  end------ */
         
         .footer-upper img{
             width:150px;
@@ -153,9 +203,79 @@
         }
         /* -----------------------footer area end----------- */
 
-        .cards-main .cards{
-            margin: 10px 0;
+        #claim h1{
+            font-size: 25px;
         }
+        .claim-text h4{
+            font-size: 20px
+        }
+        
+        .services-heading{
+            /* text-align: center; */
+            padding: 0 100px;
+        }
+        .services-heading h1{
+            font-size:40px ;
+        }
+        .services-heading h3{
+            font-size: 30px;
+        }
+        .sec-heading{
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+        .servies-list{
+            width: 150px;
+        }
+
+        /* ---------services page end --------------- */
+
+
+        /* -----testimonials-- */
+
+        
+        .testi-main{
+             display: flex;
+            justify-content: space-around;
+            padding: 0 2vw;
+            /* flex-wrap: wrap; */
+        }
+        .testi-box{
+            /* width: 250px; */
+            width: fit-content;
+        }
+        .testi-upper div{
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --------------- page testimonials end */
+
+        /* ------calculator page---- */
+
+
+        /* ------calculator page end---- */
+
+
+        /* ----------------contact page------ */
+        .conct-img img{
+            width: 400px;
+            }
+            .contact{
+                display: flex;
+                flex-direction: column;
+            }
+            .conct-right{
+                padding-bottom:5vw ;
+            }
+
+
+
+        /* ----------------contact page end------ */
+
+
+
         
             /* --------------------side nav on mid screen */
             .header-nav>ul{
@@ -242,6 +362,12 @@ display: none;
 
 /* @media(max-width:320px) { */
 @media screen and (min-width: 200px) and (max-width: 481px) { 
+
+    .calendly-badge-widget { 
+        right: auto !important; 
+        left: 20px !important;
+    } 
+
     .header-upper>div{
         display: inline-block;
     }
@@ -264,41 +390,6 @@ display: none;
         width: 100%;
     }
 
-    #four h1{
-        font-size: 25px;
-    }
-    
-    .four-text h4{
-        font-size: 20px;
-    }
-    
-    
-    #services .services-heading{
-    padding-top: 120px;
-    }
-    #services .services-heading h1{
-        font-size: 50px;
-       
-    }
-    .sec-five-triangle{
-        transform: rotate(180deg);
-        position: absolute;
-        width: 50px;
-    }
-    
-    .sec-five-triangle-right{
-        float: right;
-        width: 50px;
-    }
-    .servies-list{
-        width: 80%;
-        /* height: fit-content; */
-    }
-    
-
-    .six-content h1{
-        font-size:40px ;
-    }
     
     .benefits-heading{
         padding: 0 45px;
@@ -339,10 +430,79 @@ display: none;
         font-size: 25px;
     }
 
+    /* --------home page */
+
+
+    /* ------------about--------- */
+    .abt-com-heading{
+        padding: 0 30px;
+    }
+    .abt-com-heading h3{
+        font-size: 16px;
+    }
+    .abt-com-heading h1{
+        font-size: 22px;
+    }
+
+    .team-heading{
+        padding: 0 40px;
+        margin-bottom: 30px;
+    }
+    .team-heading h1{
+        font-size: 30px;
+    }
+    .team-heading h2{
+        font-size: 22px;
+    }
+    .team-heading h3{
+        font-size: 16px;
+    }
+
+    /* --------about page end--------- */
+    
+    
+    /* -------services page--- */
+    .sec-five-triangle{
+        transform: rotate(180deg);
+        position: absolute;
+        width: 50px;
+    }
+    
+    .sec-five-triangle-right{
+        float: right;
+        width: 50px;
+    }
+
+    .services-heading{
+    padding: 0 50px;
+    }
+
+    .services-heading h1{
+        font-size: 50px;
+    }
+
+    .sec-heading{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .services-list{
+        width: fit-content;
+       
+    }
+    #claim h1{
+        font-size: 25px;
+    }
+    .claim-text h4{
+        font-size: 20px
+    }
+    
+    /* -------------services page end------- */
+
+    
     
     .apmt-content h2{
     font-size:35px;
- }
+    }
  
     .apmt-content p{
      font-size: 15px;
@@ -354,6 +514,19 @@ display: none;
 
     /* ------bookkeeping------- */
     
+    .book-banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .book-left{
+        width: 90%;
+    }
+    .book-right img{
+        width: 220px;
+    }
+    .book-left h2{
+        font-size: 20px;
+    }
     .book-heading{
         padding:0 50px;
     }
@@ -389,85 +562,159 @@ display: none;
     }
 
     /* ---------bookkeeping page end------- */
-    
-    .footer-upper img{
-        width:150px;
-    }
-   
-    .footer-upper{
+
+  
+     /* ------catchup-b------ */
+     .catchup-banner{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
     }
+    .catchup-left img{
+        width: 250px;
+    }
+    .catchup-right{
+        width: 80%;
+    }
+    .catchup-right h2{
+        font-size: 20px;
+    }
+
+    .catchup-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .catchup-box{
+        width: 90%;
+    }
+    .catchup-banner2 h2,.catchup-main2-head h2{
+        font-size: 20px;
+    }
+
+
+
+    /* ------catchup-b  end------ */
+
+    
     .footer-upper div{
         margin-left: 30px;
     }
 
-     .footer-upper h3{
-        margin-top: 15px;
-    }
-
-
-    /* ---------------------footer area end---- */
-    .eight-heading h2{
-        font-size: 46px;
-
-    }
-        
-    .eight-heading h1{
-        font-size: 40px;
-        color: white;
-    }
-
-    .cards{
-        width: 568px;
-        text-align: center;
-        padding: 20px 0;
-        background-color: var(--white);
-    }
 
     .footer-upper{
-        height: auto;
         display: flex;
-        justify-content: space-around;
-        /* align-items: center; */
         flex-direction: column;
     }
+
     .footer-upper div{
         padding: 15px 0;
     }
-    .footer-upper div h3{
-        font-size: 20px;
+
+    .footer-bar p
+    {
+        font-size: 12px;
     }
 
-    .footer-bar p{
-        font-size: 12px;
-        }
+    /* ---------------------footer area end---- */
+
+
+
+    /* ----- page testimonials-- */
+
+    .testi-heading{
+        padding: 0 50px;
+    }
+    .testi-heading h3{
+        font-size: 18px;
+    }
+    
+    .testi-heading h3::before,
+    .testi-heading h3::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid var(--blue);
+    width: 3rem;
+    margin: 0 0.3rem;
+    transform: translateY(-0.4rem);
+    }
+    
+    .testi-main{
+        display: flex;
+        flex-direction: column;
+       /* justify-content: space-around; */
+
+       padding: 0 4vw;
+       /* flex-wrap: wrap; */
+   }
+   .testi-box{
+       /* width: 250px; */
+       width: fit-content;
+       padding-top: 5vw;
+   }
+   .testi-upper div{
+       display: flex;
+       flex-direction: column;
+   }
+
+   /* --------------- page testimonials end */
+
+  /* ----------------contact page------ */
+        .conct-img img{
+            width: 200px;
+            }
+            .contact{
+                display: flex;
+                flex-direction: column;
+            }
+            .conct-right{
+                padding-bottom:5vw ;
+            }
+
+            .conct-heading h3{
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+            .conct-heading h1{
+                font-size: 3rem;
+                text-transform: uppercase;
+                line-height: 1;
+                color: var(--blue);
+
+            }
+
+        /* ----------------contact page end------ */
+
+
+   
 
 
         /* ----------------------------side nav on small screen */
-        nav>ul{
+        .header-nav>ul{
             background: var(--blue);
             top: 0;
             right: -200px;
-            height: 80vh;
+            height: 90vh;
             width: 200px;
             position: fixed;
             padding-top: 50px;
             display: flex;
             flex-direction: column;
             transition: right 0.5s;
+            justify-content: start;
             z-index: 6;
-           
+            
         }
+
         nav .fa{
             display: block;
             font-size: 25px;
             padding: 10px 10px;
+            /* float: right; */
             position: absolute;
             top: 35px;
-            right: 10px;
+            right: 35px;
             color: var(--blue);
-            /* float: right; */
         }
 
         nav ul .fa{
@@ -477,13 +724,32 @@ display: none;
             cursor: pointer;
             color: var(--white);
         }
-         
+        
         nav ul li{
             padding: 0 15px;
         }
         .header-nav ul li a{
             color: var(--white);
         }
+
+
+        
+nav ul .abt-drop{
+display: contents;
+/* position: absolute; */
+background-color: inherit;
+/* min-width: fit-content; */
+/* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+box-shadow: none;
+padding: 0 0;
+/* top: 2.2rem; */
+transition: all 0.9s;
+/* list-style: none; */
+/* padding: 10px 20px; */
+/* z-index: 10; */
+
+}
+
 
    
 
