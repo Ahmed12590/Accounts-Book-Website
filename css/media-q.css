@@ -37,7 +37,6 @@
             position: absolute;
             top:25%;
             left: 25%;
-            /* display: none; */
         }
 
         .banner-upper img{
@@ -347,9 +346,9 @@ nav ul .abt-drop li a{
 
 
 
-.abt:hover .abt-drop{
+/* .abt:hover .abt-drop{
     display: none;
-}
+} */
 
 
 nav ul .abt-drop li a:hover{
