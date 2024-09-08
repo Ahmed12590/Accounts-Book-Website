@@ -57,7 +57,7 @@
                         </li>
                         <li><a href="calculator.html">Tax Return Calculator</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Book your Slot</a></li>
+                        <li class="nav-calendly"><a href="#" id="calendlyBtn">Book your Slot</a></li>
                         <i class="fa fa-times" onclick="closemenu()"></i>
                     </ul>
                 <i class="fa fa-bars" onclick="openmenu()"></i>
@@ -122,7 +122,8 @@
     <div class="apmt-content">
         <h2>Behind on your books and feeling stressed?</h2>
         <p>We got you covered. Get paired with our expert bookkeepers and get your books up-to-date.</p>
-        <a href="#" class="link">Learn more →</a>
+        <!-- <a href="" onclick="Calendly.initBadgeWidget({url: 'https://calendly.com/info-accsbook/30min'}); return false;"  class="link">Schedule an appointment →</a> -->
+        <a href="#" id="calendlyBtn" class="link">Schedule an appointment →</a>
     </div>
 </section>
 
@@ -185,7 +186,7 @@
     <div class="apmt-content">
         <h2>Join hundreds of individuals and business owners who trust us with their books</h2>
         <p>Any questions? Schedule a free call with us and learn more about our business.</p>
-             <a href="#" class="link">Learn more →</a>
+        <a href="#" id="calendlyBtn" class="link">Schedule an appointment →</a>
     </div>
 </section>
 
@@ -213,9 +214,9 @@
             <div class="footer-social">
                 <h3>Social Links</h3>
                 <ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i>Super Financial</a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i>Super Financial</a></li>
-                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i>Super Financial</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i>Twitter</a></li>
                     
                 </ul>
             </div>
@@ -224,8 +225,8 @@
                 <h3>Contact Us</h3>
                 <ul>
                     <li><i class="fa-solid fa-location-dot"></i>182, High Road, Willesden,<br> London, United Kingdom, NW10 2PB</li>
-                    <li><i class="fa-solid fa-envelope"></i><a href="mailto:info@accounts.co">info@accountsbook.co</a></li>
-                    <li><i class="fa-solid fa-phone"></i><a href="tel:(315) 907-4273">(315) 907-4273</a></li>
+                    <li><a href="mailto:info@accounts.co"><i class="fa-solid fa-envelope"></i>info@accountsbook.co</a></li>
+                    <li><a href="tel:(315) 907-4273"><i class="fa-solid fa-phone"></i>(315) 907-4273</a></li>
                   
                 </ul>
             </div>
@@ -234,7 +235,6 @@
             <p>All Rights Reserved © 2024 <a href="https://accountsbook.co">accountsbook.co</a></p>
         </div>
     </section>
-
     <section id="calendly">
         <!-- Calendly badge widget begin -->
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">

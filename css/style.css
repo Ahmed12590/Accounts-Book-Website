@@ -93,6 +93,10 @@ header img{
     font-weight: 500;
 } 
 
+.header-upper ul li a:hover{
+    color: black;
+}
+
 
 /* ----------header nav------ */
 
@@ -126,6 +130,7 @@ header img{
     padding: 12px 10px;
 }
 
+
 .header-nav>ul li a:hover{
     color: var(--white);
     background: var(--blue);
@@ -134,6 +139,14 @@ header img{
 .header-nav>ul li a i{
     padding-left: 7px;
     font-size: 0.7rem;
+}
+
+.nav-calendly a{
+    color: var(--blue) !important;
+    font-weight: bolder;
+}
+.nav-calendly a:hover{
+    color: white !important;
 }
 
 .abt{
@@ -875,15 +888,13 @@ text-align: center;
     display: flex;
     align-items: center;
     margin-top: 2vw;
+    width: 400px;
 }
 .conct-address h3{
     text-transform: uppercase;
     font-size: 1.7rem;
 }
 
-.conct-address p{
-    text-transform: uppercase;
-}
 
 .conct-address i{
     font-size: 4rem;
@@ -973,6 +984,9 @@ text-align: center;
 .footer-upper div ul li a{
     text-decoration: none;
     color: black;
+}
+.footer-upper div ul li a:hover{
+    color: var(--blue);
 }
 
 .footer-upper div ul li  i{
