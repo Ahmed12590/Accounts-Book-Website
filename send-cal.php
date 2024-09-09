@@ -1,20 +1,14 @@
 <?php
-echo $name = $_POST['name'];
-echo $email = $_POST['email'];
-echo $phone = $_POST['phone'];
-echo $eincome = $_POST['employee-income'];
-echo $etax = $_POST['employee-taxes'];
-echo $gincome = $_POST['gross-income'];
-echo $expenses = $_POST['expenses'];
+// echo $name = $_POST['name'];
+// echo $email = $_POST['email'];
+// echo $phone = $_POST['phone'];
+// echo $eincome = $_POST['employee-income'];
+// echo $etax = $_POST['employee-taxes'];
+// echo $gincome = $_POST['gross-income'];
+// echo $expenses = $_POST['expenses'];
 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve the value of the select field
-    $selectedOption = $_POST['tax-options'];
-    
-    // Process or display the selected value
-    echo "Selected option: " . htmlspecialchars($selectedOption);
-}
+
 
 
 //Import PHPMailer classes into the global namespace
@@ -22,6 +16,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+
+
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve the value of the select field
+    $name = strip_tags(trim($_POST["name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $phone = trim($_POST['phone']);
+    $eincome = trim($_POST['employee-income']);
+    $etax = trim($_POST['employee-taxes']);
+    $gincome = trim($_POST['gross-income']);
+    $expenses = trim($_POST['expenses']);
+
+    $selectedOption = trim($_POST['tax-options']);
+    
+    // Process or display the selected value
+     htmlspecialchars($selectedOption);
+
+
 
 //Load Composer's autoloader
 require 'vendor/autoload.php';
@@ -56,6 +70,7 @@ try {
     $mail->Body    = "Name = ".$name . '<br>' .
      "Email = ".$email . '<br>'.
      "phone = ". $phone. '<br>'.
+     "Tax Calculator Selected = ". $selectedOption. '<br>'.
      "Empolyee income = ". $eincome . '<br>'.
      "Employee Taxes = ". $etax . '<br>'.
      "Gross Income = ". $gincome . '<br>'.
@@ -74,7 +89,12 @@ try {
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+}
 
+else {
+    http_response_code(403);
+     header ("Location: calculator.html");
+}
 ?>
 
 ?>
